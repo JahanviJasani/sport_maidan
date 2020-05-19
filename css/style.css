@@ -402,7 +402,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 #footer {
   position: fixed;
-  bottom: 65px;
+  bottom: 57px;
   right: 0;
   left: 0;
   z-index: 999;
