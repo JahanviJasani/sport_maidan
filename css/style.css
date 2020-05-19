@@ -337,7 +337,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #hero .hero_img img {
-  height: 555px;
+  position: absolute;
+  top: 120px;
+  right: 88px;
+  /*transform: rotate(-2deg);*/
+  height: 565px;
   width: auto;
 }
 
