@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "Montserrat";
+  src: url("../lib/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500,
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Athene";
   src: url("../lib/fonts/Athene.otf") format("opentype");
   font-weight: normal;
@@ -43,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 0;
   color: #000;
   padding: 0;
+  font-weight: 800;
 }
 
 ul {
@@ -51,17 +59,17 @@ ul {
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-}
-
 .cta {
   display: inline-block;
-  width: 202px;
+  width: 203px;
   text-align: center;
   text-transform: uppercase;
   background: #000;
-  padding: 21px 0;
+  padding: 18.5px 0;
+}
+
+.web_container {
+  padding: 0 91px;
 }
 
 /* Prelaoder */
@@ -124,11 +132,10 @@ img {
   max-height: 42px;
 }
 
-#header .header-container {
+#header .header_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 91px;
 }
 
 /*--------------------------------------------------------------
@@ -284,10 +291,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 } 
 
-#hero .hero_carousel .slide {
-  padding: 0 91px;
-}
-
 #hero .hero_content, #hero .hero_img {
   height: 768px;
   display: flex;
@@ -341,10 +344,93 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #hero .hero_img img {
-  position: absolute;
-  top: 15.7%;
-  right: 15%;
-  height: 565px;
   width: auto;
 }
 
+#hero .hero_img .main_img img {
+  position: absolute;
+  top: 15.8%;
+  right: 16%;
+  z-index: 2;
+}
+
+#hero .hero_img .overlay_leaves {
+  position: absolute;
+  top: 20%;
+  right: 4.5%;
+  z-index: 4;
+}
+
+#hero .hero_img .overlay_leaves img {
+  height: 193px;
+}
+
+#hero .hero_img .overlay_00 {
+  position: absolute;
+  top: 11%;
+  right: 3%;
+}
+
+#hero .hero_img .overlay_01 {
+  position: absolute;
+  top: 12%;
+  right: 0;
+  z-index: 1;
+}
+
+#hero .hero_img .overlay_01 img {
+}
+
+#custom_dots {
+  position: relative;
+  display: flex;
+  margin-top: 23px;
+}
+
+#custom_dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  border-radius: 100%;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+#custom_dots .owl-dot.active {
+  background: #000;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  position: fixed;
+  bottom: 65px;
+  right: 0;
+  left: 0;
+  z-index: 997;
+}
+
+#footer .footer_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .footer_left h6 {
+  font-size: 13.5px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#footer .footer_right .social_media_links {
+  display: flex;
+}
+
+#footer .footer_right .social_media_links li {
+  margin: 0 4px;
+}
+
+#footer .footer_right .social_media_links li img {
+  width: 28px;
+}
