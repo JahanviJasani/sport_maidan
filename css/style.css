@@ -347,7 +347,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: auto;
 }
 
-#hero .hero_img .main_img img {
+#hero .hero_img .main_img {
   position: absolute;
   top: 15.8%;
   right: 16%;
@@ -359,10 +359,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 20%;
   right: 4.5%;
   z-index: 4;
-}
-
-#hero .hero_img .overlay_leaves img {
-  height: 193px;
 }
 
 #hero .hero_img .overlay_00 {
@@ -409,7 +405,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   bottom: 65px;
   right: 0;
   left: 0;
-  z-index: 997;
+  z-index: 999;
 }
 
 #footer .footer_inner {
