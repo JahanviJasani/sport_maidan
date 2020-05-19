@@ -1,0 +1,343 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../lib/fonts/Montserrat-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athene";
+  src: url("../lib/fonts/Athene.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+  color: #666666;
+  font-family: "Montserrat";
+}
+
+a {
+  color: #fff;
+  letter-spacing: 9px;
+  text-decoration: none;
+  font-size: 15px;
+  outline: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px 0;
+  color: #000;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cta {
+  display: inline-block;
+  width: 202px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #000;
+  padding: 21px 0;
+}
+
+/* Prelaoder */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../img/preloader.svg") no-repeat center center;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+.back-to-top:focus {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #2dc997;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  padding: 57px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header .logo img {
+  max-height: 42px;
+}
+
+#header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 91px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu li {
+  position: relative;
+  margin: 0 17px;
+}
+
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  font-size: 12px;
+  padding: 0 5px 7px;
+  display: inline-block;
+  letter-spacing: 3.12px;
+  color: #000;
+  font-weight: 800;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.nav-menu > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .menu-active > a:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(52, 59, 64, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #2dc997;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(52, 59, 64, 0.9);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 768px;
+  background: url(../img/hero_bg.png) top center;
+  background-size: cover;
+  position: relative;
+} 
+
+#hero .hero_carousel .slide {
+  padding: 0 91px;
+}
+
+#hero .hero_content, #hero .hero_img {
+  height: 768px;
+  display: flex;
+  align-items: center;
+}
+
+#hero .hero_content .hero_content_inner {
+  display: flex;
+}
+
+#hero .hero_content_inner .content_left h2 {
+  margin-bottom: 0;
+  font-size: 45px;
+  line-height: 1.2;
+  letter-spacing: 2.25px;
+  text-align: right;
+}
+
+#hero .hero_content_inner .content_left h2 span {
+  font-family: 'Athene';
+  display: block;
+  font-size: 37px;
+  line-height: 1.44;
+  letter-spacing: 1.88px;
+}
+
+#hero .hero_content_inner .separator {
+  margin: 0 15px;
+}
+
+#hero .hero_content_inner .content_right h1 {
+  font-size: 47px;
+  line-height: 1.21;
+  text-transform: uppercase;
+  letter-spacing: 1.18px;
+  margin-bottom: 15px;
+}
+
+#hero .hero_content_inner .content_right h6 {
+  font-size: 13.5px;
+  line-height: 1.89;
+  text-transform: uppercase;
+}
+
+#hero .hero_content_inner .content_right .hero_btn {
+  margin-top: 40px;
+}
+
+#hero .hero_img img {
+  height: 555px;
+  width: auto;
+}
+
