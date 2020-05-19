@@ -23,7 +23,7 @@ body {
 
 a {
   color: #fff;
-  letter-spacing: 9px;
+  letter-spacing: 1.8px;
   text-decoration: none;
   font-size: 15px;
   outline: none;
@@ -318,12 +318,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 15px;
 }
 
+#hero .hero_content_inner .separator img {
+  height: 145px;
+}
+
 #hero .hero_content_inner .content_right h1 {
   font-size: 47px;
   line-height: 1.21;
   text-transform: uppercase;
   letter-spacing: 1.18px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 #hero .hero_content_inner .content_right h6 {
@@ -338,9 +342,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #hero .hero_img img {
   position: absolute;
-  top: 120px;
-  right: 88px;
-  /*transform: rotate(-2deg);*/
+  top: 15.7%;
+  right: 15%;
   height: 565px;
   width: auto;
 }
