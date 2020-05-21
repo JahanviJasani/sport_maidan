@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1260px) {
+	/*--------------------------------------------------------------
+	# Hero Section
+	--------------------------------------------------------------*/
 	#hero .hero_img .main_img {
 		right: 30px;
 	}
@@ -28,6 +31,9 @@
 	#hero .slide_one .hero_img .overlay_leaves img {
 	  max-width: 510px;
 	}
+	/*--------------------------------------------------------------
+	# Locations Section
+	--------------------------------------------------------------*/
 }
 @media only screen and (min-width: 1260px) {
 	.web_container {
@@ -40,6 +46,9 @@
 	.nav-menu a {
 		letter-spacing: 3.12px;
 	}
+	/*--------------------------------------------------------------
+	# Hero Section
+	--------------------------------------------------------------*/
 	#hero .slide_inner .slide_content {
   	flex: 45.5%;
 	}
@@ -94,12 +103,18 @@
 	#hero .slide_two .hero_img .main_img, #hero .slide_three .hero_img .main_img, #hero .slide_four .hero_img .main_img {
 		right: 4%;
 	}
+	/*--------------------------------------------------------------
+	# Locations Section
+	--------------------------------------------------------------*/
 }
 
 @media only screen and (min-width: 1366px) {
 	.web_container {
 		padding: 0 90px;
 	}
+	/*--------------------------------------------------------------
+	# Hero Section
+	--------------------------------------------------------------*/
 	#hero .hero_img .main_img {
 		top: 120px;
 		right: 180px;
@@ -124,4 +139,7 @@
     bottom: 140px;
     right: 90px;
 	}
+	/*--------------------------------------------------------------
+	# Locations Section
+	--------------------------------------------------------------*/
 }
