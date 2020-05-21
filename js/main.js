@@ -2,13 +2,13 @@ jQuery(document).ready(function ($) {
 
 	$('.hero_carousel').owlCarousel({
     autoplay: false,
+    items: 1,
     loop: true,
     dots: true,
     dotsContainer: '#custom_dots',
     nav: false,
     autoplayTimeout: 7000,
-    autoplaySpeed: 2000,
-    items: 1
+    autoplaySpeed: 2000
   }); 
 
   $('.owl-dot').click(function () {
