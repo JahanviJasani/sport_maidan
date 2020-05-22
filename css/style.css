@@ -188,20 +188,17 @@ span {
 .nav-menu > li > a:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 57px;
   height: 2px;
   bottom: 0;
-  left: 0;
+  left: 50%;
   background-color: #000;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .menu-active > a:before {
-  visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -499,8 +496,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Sections
 --------------------------------------------------------------*/
 section {
-  background: url(../img/hero_bg.png) top center;
   background-size: cover;
+  height: 100vh;    
 }
 .section_header {
   display: flex;
@@ -532,7 +529,8 @@ section {
 # Locations Section
 --------------------------------------------------------------*/
 #locations {
-  padding: 155px 0 136px;
+  padding: 158px 0 136px;
+  background: url(../img/locations_bg.png) center no-repeat;
 }
 
 #locations .locations_wrapper {
@@ -542,26 +540,49 @@ section {
 
 #locations .locations_wrapper .location_single {
   position: relative;
-  margin: 0 47px;
-  width: 301px;
+  margin: 0 77px;
+  width: 242px;
+  height: 262px;
+  transition: all 1.5s;
+}
+
+#locations .locations_wrapper .location_single.bg_gurgaon {
+  background: url(../img/gurgaon_dark.png) no-repeat left;
+}
+
+#locations .locations_wrapper .location_single.bg_gurgaon:hover {
+ background: url(../img/gurgaon.png) no-repeat left; 
+}
+
+#locations .locations_wrapper .location_single.bg_manesar {
+  background: url(../img/manesar_dark.png) no-repeat left;
+}
+
+#locations .locations_wrapper .location_single.bg_manesar:hover {
+  background: url(../img/manesar.png) no-repeat left;
 }
 
 #locations .location_single .location_content {
   position: absolute;
-  top: 103px;
+  top: 101px;
   left: 34.5px;
 }
 
 #locations .location_single .location_content h4 {
   font-size: 36px;
-  line-height: 1.5;
+  line-height: 1;
   letter-spacing: 2.7px;
   color: #ffcc00;
+  margin: 0;
+}
+
+#locations .locations_wrapper .location_single:hover .location_content h4 {
+  color: #fff;
 }
 
 #locations  .location_single .location_bg {
   position: absolute;
-  right: 0;
+  left: 224px;
   bottom: 0;
 }
 
