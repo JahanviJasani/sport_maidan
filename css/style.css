@@ -15,7 +15,21 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../lib/fonts/Montserrat-Medium.ttf") format("truetype");
-  font-weight: 500,
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../lib/fonts/Montserrat-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../lib/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -50,7 +64,8 @@ a:hover {
 
 p {
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0;
+  color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,6 +97,10 @@ span {
 
 .web_container {
   padding: 0 30px;
+}
+
+.flex_container {
+  display: flex;
 }
 
 /* Prelaoder */
@@ -168,7 +187,7 @@ span {
 }
 
 @media (max-width: 768px) {
-  #nav-menu-container {
+  .nav-menu-container {
     display: none;
   }
 }
@@ -495,10 +514,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 section {
   height: 768px;
+  background: url(../img/section_bg.png);
+  background-size: cover;
 }
 .section_header {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .section_title {
@@ -507,7 +529,6 @@ section {
   font-weight: 600;
   line-height: 1.19;
   letter-spacing: 1.35px;
-  margin-bottom: 50px;
 }
 
 .section_title span {
@@ -527,8 +548,6 @@ section {
 --------------------------------------------------------------*/
 #locations {
   padding: 158px 0 136px;
-  background: url(../img/locations_bg.png) center no-repeat;
-  background-size: cover;
 }
 
 #locations .locations_wrapper {
@@ -587,6 +606,156 @@ section {
 #locations .btn_wrapper {
   margin-top: 37px;
   text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Events Section
+--------------------------------------------------------------*/
+#events {
+  padding-left: 84px;
+  position: relative;
+  background: url(../img/events_bg.png);
+  background-position: -150px -10px;
+}
+
+#events .float_01 {
+  position: absolute;
+  top: -133px;
+  left: -245px;
+  mix-blend-mode: color-burn;
+  z-index: 1;
+}
+
+#events .float_02 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: hard-light;
+}
+
+#events .float_03 {
+  position: absolute;
+  right: 28px;
+  bottom: 0;
+}
+
+#events .events_img img {
+  position: relative;
+  top: -15px;
+}
+
+#events .events_content {
+  padding-top: 226px;
+  flex-grow: 1;
+}
+
+#events .events_content .section_header {
+  justify-content: flex-end;
+  margin-bottom: 67px;
+}
+
+#events .events_content .events_list {
+  text-align: right;
+}
+
+#events .events_content .events_list a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 9px;
+  margin-bottom: 28px;
+}
+
+#events .events_content .events_list a:before {
+  content: "";
+  position: absolute;
+  width: 231px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #ffcc00;
+  transform: translateX(-50%) scaleX(1);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#events .events_content .events_list a:hover:before, #events .events_content .events_list a:hover > a:before {
+  transform: translateX(-50%) scaleX(1);
+}
+
+#events .events_content .events_list .event_title {
+  font-size: 21px;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  line-height: 1.29;
+  letter-spacing: 1.05px;
+}
+
+/*--------------------------------------------------------------
+# Membership Section
+--------------------------------------------------------------*/
+#membership {
+  padding:  127px 0 86px;
+}
+
+#membership .membership_content {
+  padding-top: 71px;
+}
+
+#membership .membership_content h1 {
+  font-family: 'Athene';
+  font-size: 58.5px;
+  font-weight: normal;
+  line-height: 70px;
+  letter-spacing: 2.93px;
+  margin: 0;
+}
+
+#membership .membership_sports {
+  margin-top: 55px;
+}
+
+#membership .btn_wrapper {
+  margin-top: 54px;
+  text-align: center;
+}
+
+#membership .membership_img {
+  position: relative;
+  flex-grow: 1;
+}
+
+#membership .membership_img .main_img {
+  position: absolute;
+  right: 64px;
+}
+
+#membership .membership_img .overlay_leaves {
+  position: absolute;
+  top: 33px;
+  right: 0;
+}
+
+#membership .membership_img .img_content {
+  position: absolute;
+  top: 145px;
+  right: 212px;
+  width: 366px;
+}
+
+#membership .membership_img .img_content h2 {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 0.51px;
+  line-height: 1;
+  margin: 0;
+}
+
+#membership .membership_img .img_content p {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 1.58px;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
