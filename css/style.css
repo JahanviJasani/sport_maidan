@@ -494,8 +494,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Sections
 --------------------------------------------------------------*/
 section {
-  background-size: cover;
-  height: 768px;    
+  height: 768px;
 }
 .section_header {
   display: flex;
@@ -508,7 +507,7 @@ section {
   font-weight: 600;
   line-height: 1.19;
   letter-spacing: 1.35px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .section_title span {
@@ -529,6 +528,7 @@ section {
 #locations {
   padding: 158px 0 136px;
   background: url(../img/locations_bg.png) center no-repeat;
+  background-size: cover;
 }
 
 #locations .locations_wrapper {
@@ -538,8 +538,8 @@ section {
 
 #locations .locations_wrapper .location_single {
   position: relative;
-  margin: 0 77px;
-  width: 242px;
+  margin: 0 47px;
+  width: 301px;
   height: 262px;
   transition: all 1.5s;
 }
@@ -585,7 +585,7 @@ section {
 }
 
 #locations .btn_wrapper {
-  margin-top: 47px;
+  margin-top: 37px;
   text-align: center;
 }
 
