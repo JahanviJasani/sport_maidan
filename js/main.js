@@ -29,26 +29,6 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  // Navigation active state on scroll
-  // var nav_sections = $('section');
-  // var main_nav = $('.nav-menu-container, .mobile-nav');
-  // var main_nav_height = $('#header').outerHeight();
-  // console.log(main_nav_height);
-
-  // $(window).on('scroll', function() {
-  //   var cur_pos = $(this).scrollTop();
-
-  //   nav_sections.each(function() {
-  //     var top = $(this).offset().top - 50;
-  //     bottom = top + $(this).outerHeight();
-
-  //     if (cur_pos >= top && cur_pos <= bottom) {
-  //       main_nav.find('li').removeClass('menu-active');
-  //       main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('menu-active');
-  //     }
-  //   });
-  // });
-
   $('.hero_carousel').owlCarousel({
     autoplay: false,
     items: 1,
