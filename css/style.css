@@ -822,6 +822,10 @@ section {
   text-align: center;
 }
 
+#school_ex .school_ex_img {
+  position: relative;
+}
+
 #school_ex .school_ex_img .overlay_leaves {
   position: absolute;
   bottom: 177px;
@@ -852,6 +856,10 @@ section {
 
 #contact .flex_container {
   justify-content: flex-end;
+}
+
+#contact .contact_content {
+  position: relative;
 }
 
 #contact .contact_content h1 {
@@ -924,8 +932,8 @@ section {
 
 #contact .contact_content .overlay_leaves {
   position: absolute;
-  right: 90px;
-  bottom: 180px;
+  right: 0;
+  bottom: 0;
 }
 
 /*--------------------------------------------------------------
