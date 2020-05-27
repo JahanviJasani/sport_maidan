@@ -1,3 +1,11 @@
+@media only screen and (min-width: 1024px) { 
+	/*--------------------------------------------------------------
+	# Navigation Menu
+	--------------------------------------------------------------*/
+	.nav-menu li {
+		margin: 0 17px;
+	}
+}
 @media only screen and (max-width: 1099px) { 
 	/*--------------------------------------------------------------
 	# Membership Section
@@ -16,7 +24,8 @@
 		right: 150px;
 	}
 }
-@media only screen and (max-width: 1259px) {
+
+@media only screen and (max-width: 1199px) {
 	/*--------------------------------------------------------------
 	# Hero Section
 	--------------------------------------------------------------*/
@@ -24,34 +33,34 @@
 		right: 30px;
 	}
 	#hero .slide_one .hero_img .main_img {
-	  right: 60px;
+	  right: 65px;
 	}
 	#hero .hero_img .main_img img {
-	  max-width: 500px;
+	  max-width: 540px;
 	}
 	#hero .slide_one .hero_img .main_img img {
-	  max-width: 450px;
+	  max-width: 490px;
 	}
 	#hero .hero_img .overlay_leaves {
-		top: 28%;
+		top: 27%;
 		right: 4.8%;
 	}
 	#hero .slide_one .hero_img .overlay_leaves {
-	  top: 25%;
-	  right: 0.5%;
+	  top: 24%;
+	  right: 0px;
 	}
 	#hero .slide_two .hero_img .overlay_leaves {
 		right: 4%;
 	}
 	#hero .hero_img .overlay_leaves img {
-		max-width: 460px;
+		max-width: 515px;
 	} 
 	#hero .slide_one .hero_img .overlay_leaves img {
-	  max-width: 510px;
+	  max-width: 580px;
 	}
 }
 
-@media only screen and (min-width: 1260px) {
+@media only screen and (min-width: 1200px) {
 	.web_container {
 		padding: 0 50px;
 	}
@@ -103,14 +112,14 @@
 	}
 	#hero .hero_img .main_img {
 		top: 16%;
-    right: 10.9%;
+    right: 10.5%;
 	}
 	#hero .hero_img .overlay_leaves {
     top: 20%;
     right: 5%;
 	}
 	#hero .slide_two .hero_img .overlay_leaves, #hero .slide_three .hero_img .overlay_leaves, #hero .slide_four .hero_img .overlay_leaves {
-		top: 24%;
+		top: 23.5%;
 		right: 5.5%;
 	}
 	#hero .slide_three .hero_img .overlay_leaves, #hero .slide_four .hero_img .overlay_leaves {
@@ -126,14 +135,12 @@
   	padding-left: 84px;
   }
   #events .events_content {
+  	flex: auto;
+    flex-grow: 1;
   	padding-top: 226px;
   }
   #events .float_03 {
   	right: 28px;
-  }
-  #events .events_content {
-  	flex: auto;
-  	flex-grow: 1;
   }
 }
 
