@@ -23,6 +23,18 @@
 
 <body>
 
+	<div id="contact_loader">  
+    <div class="loader"></div>
+    <div id="contact_success" class="contact_alert">
+      <p>Your response has been <br>submitted succesfully.</p>
+      <button type="button" class="close"><img src="img/alert_close.png"></button>
+    </div>
+    <div id="contact_error" class="contact_alert">
+    	<p>Sorry! Something went wrong. Please try again.</p>
+      <button type="button" class="close"><img src="img/alert_close.png"></button>
+    </div>
+  </div>
+
 	<!--==========================
   Header
   ============================-->
@@ -48,7 +60,7 @@
   <!--==========================
     Hero Section
   ============================-->
-  <section id="hero">
+  <!-- <section id="hero">
   	<div class="owl-carousel hero_carousel" data-ride="carousel">
   		<div class="slide slide_one web_container">
   			<div class="slide_inner">
@@ -213,7 +225,7 @@
 	    	</div>
   		</div>
   	</div>
-  </section>
+  </section> -->
 
 	<main>
 		
@@ -332,36 +344,28 @@
 	  <!--==========================
     Contact Section
 	  ============================-->
-	  <!-- <section id="contact">
+	  <section id="contact">
 	  	<div class="web_container flex_container">
 		  	<div class="contact_content">
 		  		<h1>Contact<span>us</span></h1>
 		  		<div class="contact_form">
-		  			<form id="contactForm" novalidate="" action="" method="post" class="was-validated">
+		  			<form id="contactForm" novalidate="" action="" method="post">
               <div class="row">
-                <div class="col-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control mb-30" name="name" id="name" placeholder="name*" required>
-                    <div class="invalid-feedback">Please enter your name</div>
-                  </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="name*" required>
+                  <div class="invalid-feedback">Please enter your name</div>
                 </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <input type="email" class="form-control mb-30" name="email" id="email" placeholder="email*" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
-                    <div class="invalid-feedback">Please enter your email</div>
-                  </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="email*" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
+                  <div class="invalid-feedback invalid-email"></div>
                 </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <input type="tel" name="phone" placeholder="phone no.*" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" class="form-control" required>
-                    <div class="invalid-feedback">Please enter your company name</div>
-                  </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="phone no.*" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" required>
+                  <div class="invalid-feedback invalid-phone"></div>
                 </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="message*" required></textarea>
-                    <div class="invalid-feedback">Please enter your message</div>
-                  </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" id="message" cols="30" rows="6" placeholder="message*" required></textarea>
+                  <div class="invalid-feedback">Please enter your message</div>
                 </div>
                 <div class="form_btn_wrapper">
                   <button type="submit" class="form_btn cta">Submit</button>
@@ -374,7 +378,7 @@
           </div>
 		  	</div>
 		  </div>
-	  </section> -->
+	  </section>
 
 	</main>
 
