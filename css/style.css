@@ -704,7 +704,6 @@ section {
 # Events Section
 -------------------------------------------------------------- */
 #events {
-  padding-left: 84px;
   position: relative;
   background: url(../img/events_bg.png);
   background-position: -150px -10px;
@@ -728,18 +727,19 @@ section {
 
 #events .float_03 {
   position: absolute;
-  right: 28px;
+  right: 12px;
   bottom: 0;
 }
 
 #events .events_img img {
+  max-width: 100%;
   position: relative;
   top: -15px;
 }
 
 #events .events_content {
-  padding-top: 226px;
-  flex-grow: 1;
+  padding-top: 200px;
+  flex: 47%;
 }
 
 #events .events_content .section_header {
@@ -751,14 +751,20 @@ section {
   text-align: right;
 }
 
-#events .events_content .events_list a {
+#events .events_content .events_list .event_title {
   display: inline-block;
   position: relative;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 1.29;
+  text-transform: uppercase;
+  letter-spacing: 1.05px;
+  color: #000;    
   padding-bottom: 9px;
   margin-bottom: 28px;
 }
 
-#events .events_content .events_list a:before {
+#events .events_content .events_list .event_title:before {
   content: "";
   position: absolute;
   width: 231px;
@@ -770,17 +776,8 @@ section {
   transition: all 0.3s ease-in-out 0s;
 }
 
-#events .events_content .events_list a:hover:before, #events .events_content .events_list a:hover > a:before {
+#events .events_content .events_list .event_title:hover:before, #events .events_content .events_list .event_title:hover > .event_title:before {
   transform: translateX(-50%) scaleX(1);
-}
-
-#events .events_content .events_list .event_title {
-  font-size: 21px;
-  font-weight: normal;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  line-height: 1.29;
-  letter-spacing: 1.05px;
 }
 
 /*--------------------------------------------------------------
