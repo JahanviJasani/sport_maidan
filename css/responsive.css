@@ -174,7 +174,7 @@
 }
 
 @media only screen and (min-height: 769px) {
-	#locations, #events, #contact {
+	#locations, #events {
 		padding: 0;
 		display: flex;
 		align-items: center;
@@ -185,6 +185,12 @@
 		align-self: center;
 	}
 	#contact {
-		justify-content: flex-end;
+		padding: 0;
+	}
+	#contact .flex_container {
+		align-items: center;
+	}
+	#contact .contact_content .overlay_leaves {
+		bottom: 0;
 	}
 }

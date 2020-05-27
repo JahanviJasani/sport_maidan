@@ -970,7 +970,7 @@ section {
 
 #contact .contact_form {
   position: relative;
-  z-index: 10;
+  z-index: 2;
   width: 446px;
   margin-left: auto;
   margin-top: 15px;
@@ -1064,7 +1064,7 @@ section {
 #contact .contact_content .overlay_leaves {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 30%;
 }
 
 /*--------------------------------------------------------------
