@@ -111,6 +111,7 @@ img {
 
 .flex_container {
   display: flex;
+  height: 100%;
 }
 
 /* Prelaoder */
@@ -602,9 +603,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Sections
 --------------------------------------------------------------*/
 section {
-  height: 768px;
+  /*height: 768px;*/
+  height: 100vh;
   background: url(../img/section_bg.png);
-  background-size: cover;
 }
 .section_header {
   display: flex;
@@ -637,6 +638,7 @@ section {
 #locations {
   padding: 182px 0 136px;
   background: url(../img/location_bg.png);
+  background-size: cover;
 }
 
 #locations .locations_wrapper {
@@ -700,7 +702,7 @@ section {
 
 /*--------------------------------------------------------------
 # Events Section
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 #events {
   padding-left: 84px;
   position: relative;
@@ -764,7 +766,7 @@ section {
   bottom: 0;
   left: 50%;
   background-color: #ffcc00;
-  transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 

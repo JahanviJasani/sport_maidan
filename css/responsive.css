@@ -143,3 +143,19 @@
 	# Locations Section
 	--------------------------------------------------------------*/
 }
+
+@media only screen and (min-height: 769px) {
+	#locations, #events, #contact {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}	
+	#membership .membership_content {
+		padding: 0;
+		align-self: center;
+	}
+	#contact {
+		justify-content: flex-end;
+	}
+}
