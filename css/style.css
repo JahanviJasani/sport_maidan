@@ -92,6 +92,7 @@ span {
 
 img {
   vertical-align: middle;
+  max-width: 100%;
 }
 
 .cta {
@@ -101,7 +102,6 @@ img {
   text-align: center;
   text-transform: uppercase;
   background: #000;
-  /*padding: 18.5px 0;*/
   padding: 15px 0;
 }
 
@@ -449,7 +449,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #hero .hero_content_inner .content_left h2, #hero .hero_content_inner .content_left h4 {
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.2;
   letter-spacing: 2.25px;
   text-align: right;
@@ -545,8 +545,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #hero .hero_content_inner .separator img {
-  height: 145px;
+  height: 135px;
   width: 2px;
+  max-width: none;
 }
 
 #hero .slide_four .hero_content_inner .separator img {
@@ -732,7 +733,6 @@ section {
 }
 
 #events .events_img img {
-  max-width: 100%;
   position: relative;
   top: -15px;
 }
@@ -827,7 +827,7 @@ section {
 
 #membership .membership_img .img_content {
   position: absolute;
-  top: 145px;
+  top: 140px;
   right: 212px;
   width: 366px;
 }

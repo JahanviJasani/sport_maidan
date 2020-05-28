@@ -5,23 +5,14 @@
 	.nav-menu li {
 		margin: 0 17px;
 	}
-}
-@media only screen and (max-width: 1099px) { 
 	/*--------------------------------------------------------------
-	# Membership Section
+	# Hero Section
 	--------------------------------------------------------------*/
-	#membership .membership_img .main_img {
-		right: 10px;
+	#hero .hero_content_inner .content_left h2, #hero .hero_content_inner .content_left h4 {
+		font-size: 40px;
 	}
-	#membership .membership_img .overlay_leaves {
-		right: -25px;
-		top: 38px;
-	}
-	#membership .membership_img .overlay_leaves img {
-		max-width: 600px;
-	}
-	#membership .membership_img .img_content {
-		right: 150px;
+	#hero .hero_content_inner .separator img {
+		height: 145px;
 	}
 }
 
@@ -57,6 +48,22 @@
 	} 
 	#hero .slide_one .hero_img .overlay_leaves img {
 	  max-width: 580px;
+	}
+}
+
+@media only screen and (max-width: 1099px) { 
+	/*--------------------------------------------------------------
+	# Membership Section
+	--------------------------------------------------------------*/
+	#membership .membership_img .main_img {
+		right: 10px;
+	}
+	#membership .membership_img .overlay_leaves {
+		right: -25px;
+		top: 38px;
+	}
+	#membership .membership_img .img_content {
+		right: 150px;
 	}
 }
 
