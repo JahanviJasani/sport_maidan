@@ -925,14 +925,14 @@ section {
 #contact {
   background: url('../img/contact_bg.png') center;
   background-size: cover;
-  padding-top: 128px;
+  padding: 120px 0;
 }
 
 #contact .flex_container {
   justify-content: flex-end;
 }
 
-#contact .contact_content {
+#contact .contact_form_area {
   position: relative;
 }
 
@@ -1052,7 +1052,11 @@ section {
 #contact .contact_content .overlay_leaves {
   position: absolute;
   right: 0;
-  bottom: 28.5%;
+  bottom: 0;
+}
+
+#contact .contact_content .overlay_leaves img {
+  max-width: none;
 }
 
 /*--------------------------------------------------------------
