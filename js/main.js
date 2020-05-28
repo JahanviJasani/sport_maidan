@@ -1,6 +1,16 @@
 jQuery(document).ready(function ($) {
 
-	// Smoth scroll on page hash links
+	$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+      $('#header').addClass('header-fixed');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+      $('#header').removeClass('header-fixed');
+    }
+  });
+
+  // Smoth scroll on page hash links
   $('a[href*="#"]:not([href="#"])').on('click', function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     var target = $(this.hash);
@@ -63,10 +73,9 @@ $('#contactForm').submit(function(event){
     form.addClass('was-validated');
   }
   else{
-    // console.log(form[0][0].value, form[0][1].value, form[0][2].value, form[0][3].value)
     $('#contact_loader').css('display','flex');
     // $('#contact_loader .loader').css('display','block');
-$("#contact_success").css('display','flex')
+    $("#contact_success").css('display','flex')
     var jqxhr = $.post( "http://corporateolympics.sportsmaidan.com/api/sports/send_mail/",{ name: form[0][0].value, email: form[0][1].value, phoneno: form[0][2].value, message:  form[0][3].value} )
       .done(function() {
         $('#contact_loader .loader').css('display','none');
