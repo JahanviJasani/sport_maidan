@@ -37,6 +37,15 @@
 	.flex_container {
 		flex-wrap: wrap;
 	}
+	#events {
+		padding: 140px 0 120px;
+	}
+	#events .events_img {
+		display: none;
+	}
+	#events .events_content .events_list {
+		text-align: center;
+	}
 	#membership .membership_content {
 		text-align: center;
 		flex: 100%;
