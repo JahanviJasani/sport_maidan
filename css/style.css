@@ -792,20 +792,19 @@ section {
 }
 
 #membership .membership_img .main_img {
-  position: absolute;
-  right: 64px;
+  position: relative;
 }
 
 #membership .membership_img .overlay_leaves {
   position: absolute;
-  top: 33px;
-  right: 0;
+  top: 38px;
+  right: -25px;
 }
 
 #membership .membership_img .img_content {
   position: absolute;
   top: 140px;
-  right: 212px;
+  right: 150px;
   width: 366px;
 }
 
