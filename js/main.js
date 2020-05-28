@@ -63,10 +63,11 @@ $('#contactForm').submit(function(event){
     form.addClass('was-validated');
   }
   else{
+    // console.log(form[0][0].value, form[0][1].value, form[0][2].value, form[0][3].value)
     $('#contact_loader').css('display','flex');
     // $('#contact_loader .loader').css('display','block');
 $("#contact_success").css('display','flex')
-    var jqxhr = $.post( "http://corporateolympics.sportsmaidan.com/api/send_mail/",{ name: form[0][0].value, email: form[0][1].value, company: form[0][2].value, message:  form[0][3].value} )
+    var jqxhr = $.post( "http://corporateolympics.sportsmaidan.com/api/sports/send_mail/",{ name: form[0][0].value, email: form[0][1].value, phoneno: form[0][2].value, message:  form[0][3].value} )
       .done(function() {
         $('#contact_loader .loader').css('display','none');
         $("#contact_error").css('display','none');
