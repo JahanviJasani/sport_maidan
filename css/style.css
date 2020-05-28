@@ -683,9 +683,9 @@ section {
 #events {
   position: relative;
   background: url(../img/events_bg.png);
-  background-position: -150px -10px;
-  background-size: cover;
+  background-position: -200px -70px;
   overflow: hidden;
+  padding: 100px 0 120px;
 }
 
 #events .float_01 {
@@ -715,8 +715,8 @@ section {
 }
 
 #events .events_content {
-  padding-top: 200px;
-  flex: 51%;
+  flex: 95%;
+  align-self: center;
 }
 
 #events .events_content .section_header {
@@ -731,7 +731,7 @@ section {
 #events .events_content .events_list .event_title {
   display: inline-block;
   position: relative;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: normal;
   line-height: 1.29;
   text-transform: uppercase;

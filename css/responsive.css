@@ -2,6 +2,20 @@
 
 }
 
+@media only screen and (min-width: 992px) {
+	#events {
+		padding: 0;
+		background-position: -150px -10px;
+	}
+	#events .events_content {
+	  flex: 53%;
+	  padding-right: 1%;
+	}
+	#events .events_content .events_list .event_title {
+		font-size: 21px;
+	}
+}
+
 @media only screen and (min-width: 1024px) { 
 	.nav-menu li {
 		margin: 0 17px;
@@ -142,7 +156,7 @@
   #events .events_content {
   	flex: auto;
     flex-grow: 1;
-  	padding-top: 226px;
+    padding-right: 0;
   }
   #events .float_03 {
   	right: 28px;
@@ -180,6 +194,10 @@
     bottom: 140px;
     right: 90px;
 	}
+	#events .events_content {
+		padding-top: 226px;
+		align-self: auto;
+	}
 	#contact {
 	  padding: 128px 0 0;
 	}
@@ -210,7 +228,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	}	
+	}
 	#membership .membership_content {
 		padding: 0;
 		align-self: center;
