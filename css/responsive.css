@@ -182,9 +182,21 @@
     bottom: 140px;
     right: 90px;
 	}
-	/*--------------------------------------------------------------
-	# Locations Section
-	--------------------------------------------------------------*/
+}
+
+@media only screen and (max-height: 767px) {
+	#header.header-fixed {
+		padding: 18px 0;
+	}
+	#hero, #hero .hero_content, #hero .hero_img {
+		height: 768px;
+	}
+	section {
+		height: 768px;
+	}
+	#footer {
+		position: relative;
+	}
 }
 
 @media only screen and (min-height: 769px) {

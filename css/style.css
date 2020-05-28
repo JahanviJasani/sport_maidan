@@ -44,7 +44,7 @@
 # General
 --------------------------------------------------------------*/
 *, ::after, ::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -52,6 +52,7 @@ body {
   color: #666666;
   font-family: "Montserrat";
   margin: 0;
+  /*overflow-x: hidden;*/
 }
 
 a {
@@ -204,43 +205,11 @@ img {
     transform: rotate(360deg); }
 }
 
-
-/* Back to top button */
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  padding: 6px 12px 9px 12px;
-  font-size: 16px;
-  border-radius: 2px;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s;
-}
-
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
-}
-
-.back-to-top:focus {
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  outline: none;
-}
-
-.back-to-top:hover {
-  background: #2dc997;
-  color: #fff;
-}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  padding: 65px 0;
+  padding: 50px 0;
   position: fixed;
   left: 0;
   top: 0;
@@ -260,7 +229,7 @@ img {
 }
 
 #header.header-fixed {
-  padding: 30px 0;
+  padding: 25px 0;
   background: rgba(255,255,255,0.8);
   transition: all 0.5s;
 }
@@ -610,7 +579,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Sections
 --------------------------------------------------------------*/
 section {
-  /*height: 768px;*/
   height: 100vh;
   background: url(../img/section_bg.png);
 }
@@ -1082,7 +1050,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   position: fixed;
-  bottom: 57px;
+  bottom: 30px;
   right: 0;
   left: 0;
   z-index: 999;
@@ -1098,6 +1066,27 @@ section {
   font-size: 13.5px;
   font-weight: 500;
   margin: 0;
+}
+
+#footer .footer_center .back-to-top {
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  transition: background 0.5s;
+} 
+
+.back-to-top:focus {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #2dc997;
+  color: #fff;
 }
 
 #footer .footer_right .social_media_links {
