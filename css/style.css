@@ -626,7 +626,7 @@ section {
 
 #locations .locations_wrapper .location_single {
   position: relative;
-  margin: 0 38.5px;
+  margin: 0 30px;
   width: 242px;
   height: 262px;
   transition: all 1.5s;
