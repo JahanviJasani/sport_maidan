@@ -580,8 +580,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 section {
   height: 100vh;
-  background: url(../img/section_bg.png);
+  background: url(../img/section_bg.png) center;
+  background-size: cover;
 }
+
 .section_header {
   display: flex;
   justify-content: center;
@@ -682,6 +684,7 @@ section {
   position: relative;
   background: url(../img/events_bg.png);
   background-position: -150px -10px;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -825,8 +828,17 @@ section {
 /*--------------------------------------------------------------
 # School Excursion Section
 --------------------------------------------------------------*/
+#school_ex {
+  background-size: cover;
+}
+
+#school_ex .flex_container {
+  align-items: center;
+}
+
 #school_ex .school_ex_content {
-  padding: 134px 80px 0 90px;
+  padding: 92px 80px 0;
+  width: 646px;
 }
 
 #school_ex .school_ex_content h1 {
@@ -864,9 +876,9 @@ section {
 
 #school_ex .school_ex_content p {
   position: relative;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: normal;
-  letter-spacing: 0.98px;
+  letter-spacing: 1px;
   line-height: 1.62;
   text-align: justify;
   margin-bottom: 15px;
@@ -884,10 +896,7 @@ section {
 
 #school_ex .school_ex_img {
   position: relative;
-}
-
-#school_ex .school_ex_img img {
-  max-width: none;
+  order: 1;
 }
 
 #school_ex .school_ex_img .overlay_leaves {
@@ -915,6 +924,7 @@ section {
 --------------------------------------------------------------*/
 #contact {
   background: url('../img/contact_bg.png') center;
+  background-size: cover;
   padding-top: 128px;
 }
 
