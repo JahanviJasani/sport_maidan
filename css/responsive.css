@@ -1,3 +1,9 @@
+@media only screen and (min-width: 412px) {
+	#events .float_01 {
+		top: -60px;
+  	left: -100px;
+	}
+}
 @media only screen and (min-width: 600px) {
 	/*--------------------------------------------------------------
 	# Sections
@@ -9,6 +15,9 @@
 		max-width: 100%;
 		left: -44px;
   	top: -38px;
+	}
+	#events .events_content .events_list .event_title {
+		font-size: 21px;
 	}
 	/*--------------------------------------------------------------
 	# Locations Section
@@ -22,6 +31,13 @@
 	#locations  .location_single .location_bg {
 		max-width: 100%;
 		left: 224px;
+	}
+	/*--------------------------------------------------------------
+	# Events Section
+	-------------------------------------------------------------- */
+	#events .float_01 {
+		top: -120px;
+  	left: -150px;
 	}
 	/*--------------------------------------------------------------
 	# Contact Section
@@ -68,13 +84,47 @@
 
 @media only screen and (min-width: 992px) {
 	.nav-menu li {
-		margin: 0 17px;
+		margin: 0 16px;
 	}
 	/*--------------------------------------------------------------
 	# Locations Section
 	--------------------------------------------------------------*/
 	#locations {
 		padding: 186px 0 156px;
+	}
+	/*--------------------------------------------------------------
+	# Events Section
+	-------------------------------------------------------------- */
+	#events {
+		padding: 0;
+		background-position: -150px -10px;
+	}
+	#events .float_01 {
+	  top: -120px;
+	  left: -350px;
+	}
+	#events .float_03 {
+		max-height: 100%;
+	}
+	#events .flex_container {
+		flex-wrap: nowrap;
+	}
+	#events .events_img {
+		position: relative;
+		left: 64px;
+		height: 768px;
+	  display: block;
+	}
+	#events .events_content {
+	  align-self: center;
+	  flex: 55%;
+	  padding-right: 2%;
+	}
+	#events .events_content .section_heading {
+	  justify-content: flex-end;
+	}
+	#events .events_content .events_list {
+	  text-align: right;
 	}
 	/*--------------------------------------------------------------
 	# Contact Section
@@ -115,5 +165,36 @@
 @media only screen and (min-width: 1200px) {
 	.web_container {
 		padding: 0 50px;
+	}
+	/*--------------------------------------------------------------
+	# Events Section
+	--------------------------------------------------------------*/
+	#events .float_01 {
+	  top: -120px;
+	  left: -300px;
+	}
+	#events .float_03 {
+		right: 28px;
+	}
+	#events .events_content {
+  	flex: auto;
+    flex-grow: 1;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+	.web_container {
+		padding: 0 90px;
+	}
+	/*--------------------------------------------------------------
+	# Events Section
+	--------------------------------------------------------------*/
+	#events .events_img {
+		left: 84px;
+	}
+	#events .float_01 {
+	  top: -133px;
+	  left: -245px;
 	}
 }

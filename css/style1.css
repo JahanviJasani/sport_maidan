@@ -212,85 +212,11 @@ section {
 
 
 
-/*--------------------------------------------------------------
-# Events Section
--------------------------------------------------------------- */
-#events {
-  position: relative;
-  background: url(../img/events_bg.png);
-  background-position: -200px -70px;
-  overflow: hidden;
-  padding: 100px 0 120px;
-}
 
-#events .float_01 {
-  position: absolute;
-  top: -133px;
-  left: -245px;
-  mix-blend-mode: color-burn;
-  z-index: 1;
-}
 
-#events .float_02 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  mix-blend-mode: hard-light;
-}
 
-#events .float_03 {
-  position: absolute;
-  right: 12px;
-  bottom: 0;
-}
 
-#events .events_img img {
-  position: relative;
-  top: -15px;
-}
 
-#events .events_content {
-  flex: 95%;
-  align-self: center;
-}
-
-#events .events_content .section_header {
-  justify-content: flex-end;
-  margin-bottom: 67px;
-}
-
-#events .events_content .events_list {
-  text-align: right;
-}
-
-#events .events_content .events_list .event_title {
-  display: inline-block;
-  position: relative;
-  font-size: 19px;
-  font-weight: normal;
-  line-height: 1.29;
-  text-transform: uppercase;
-  letter-spacing: 1.05px;
-  color: #000;    
-  padding-bottom: 9px;
-  margin-bottom: 28px;
-}
-
-#events .events_content .events_list .event_title:before {
-  content: "";
-  position: absolute;
-  width: 231px;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  background-color: #ffcc00;
-  transform: translateX(-50%) scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
-}
-
-#events .events_content .events_list .event_title:hover:before, #events .events_content .events_list .event_title:hover > .event_title:before {
-  transform: translateX(-50%) scaleX(1);
-}
 
 /*--------------------------------------------------------------
 # Membership Section
