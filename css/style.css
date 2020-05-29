@@ -381,6 +381,98 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
+.section_heading {
+  display: flex;
+  justify-content: center;
+}
+
+.section_heading .section_title {
+  position: relative;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.19;
+  letter-spacing: 1.35px;
+}
+
+.section_heading .section_title span {
+  font-family: "Athene";  
+  font-weight: normal;
+  display: inline-block;
+}
+
+.section_heading .section_title .title_bg {
+  position: absolute;
+  left: -22px;
+  top: -15px;
+  max-width: 85px;
+}
+
+/*--------------------------------------------------------------
+# Locations Section
+--------------------------------------------------------------*/
+#locations {
+  /*padding: 182px 0 136px;*/
+  padding: 120px 0 60px;
+  background: url(../img/location_bg.png) center;
+  background-size: cover;
+}
+
+#locations .locations_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+#locations .locations_wrapper .location_single {
+  position: relative;
+  margin: 20px 0;
+  width: 242px;
+  height: 262px;
+  transition: all 1.5s;
+}
+
+#locations .locations_wrapper .location_single.bg_gurgaon {
+  background: url(../img/gurgaon_dark.png) no-repeat left;
+}
+
+#locations .locations_wrapper .location_single.bg_gurgaon:hover {
+ background: url(../img/gurgaon.png) no-repeat left; 
+}
+
+#locations .locations_wrapper .location_single.bg_manesar {
+  background: url(../img/manesar_dark.png) no-repeat left;
+}
+
+#locations .locations_wrapper .location_single.bg_manesar:hover {
+  background: url(../img/manesar.png) no-repeat left;
+}
+
+#locations .location_single .location_content {
+  position: absolute;
+  top: 101px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#locations .location_single .location_content a {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 2.7px;
+  color: #ffcc00;
+  margin: 0;
+}
+
+#locations .locations_wrapper .location_single:hover .location_content a {
+  color: #fff;
+}
+
+#locations  .location_single .location_bg {
+  position: absolute;
+  left: 210px;
+  bottom: 0;
+  max-width: 60px;
+}
 
 /*--------------------------------------------------------------
 # Contact Section

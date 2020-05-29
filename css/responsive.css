@@ -1,5 +1,29 @@
 @media only screen and (min-width: 600px) {
 	/*--------------------------------------------------------------
+	# Sections
+	--------------------------------------------------------------*/
+	.section_heading .section_title {
+		font-size: 54px;
+	}
+	.section_heading .section_title .title_bg {
+		max-width: 100%;
+		left: -44px;
+  	top: -38px;
+	}
+	/*--------------------------------------------------------------
+	# Locations Section
+	--------------------------------------------------------------*/
+	#locations .locations_wrapper .location_single {
+		margin: 20px 38px;
+	}
+	#locations .location_single .location_content a {
+		font-size: 36px;
+	} 
+	#locations  .location_single .location_bg {
+		max-width: 100%;
+		left: 224px;
+	}
+	/*--------------------------------------------------------------
 	# Contact Section
 	--------------------------------------------------------------*/
 	#contact {
@@ -24,7 +48,7 @@
 	#contact .section_header .section_title {
 		font-size: 58.5px;
 	}
-	#contact .section_header .section_title span {
+	#contact .section_header .section_title span {	
 		font-size: 54px;
 	}
 	#contact .contact_form {
@@ -43,6 +67,15 @@
 }
 
 @media only screen and (min-width: 992px) {
+	.nav-menu li {
+		margin: 0 17px;
+	}
+	/*--------------------------------------------------------------
+	# Locations Section
+	--------------------------------------------------------------*/
+	#locations {
+		padding: 186px 0 156px;
+	}
 	/*--------------------------------------------------------------
 	# Contact Section
 	--------------------------------------------------------------*/

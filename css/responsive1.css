@@ -114,9 +114,6 @@
 }
 
 @media only screen and (min-width: 1024px) { 
-	.nav-menu li {
-		margin: 0 17px;
-	}
 	#hero .hero_content_inner .content_left h2, #hero .hero_content_inner .content_left h4 {
 		font-size: 40px;
 	}
