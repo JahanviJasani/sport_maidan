@@ -567,6 +567,66 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# Membership Section
+--------------------------------------------------------------*/
+#membership {
+  padding: 100px 0 60px;
+  background: url(../img/section_bg.png) center;
+  background-size: cover;
+}
+
+#membership .section_header .section_title {
+  font-size: 38px;
+}
+
+#membership .membership_sports {
+  margin-top: 55px;
+}
+
+#membership .btn_wrapper {
+  margin-top: 54px;
+  text-align: center;
+}
+
+#membership .membership_img {
+  position: relative;
+  margin-top: 30px;
+}
+
+#membership .membership_img {
+  position: relative;
+  margin-top: 30px;
+}
+
+#membership .membership_img .overlay_leaves {
+  position: absolute;
+  top: 20px;
+  right: -10px;
+}
+
+#membership .membership_img .img_content {
+  position: absolute;
+  top: 25%;
+  left: 11%;
+  width: 64%;
+}
+
+#membership .membership_img .img_content .img_title {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.51px;
+  line-height: 1;
+  margin: 0;
+}
+
+#membership .membership_img .img_content p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+/*--------------------------------------------------------------
 # School Excursion Section
 --------------------------------------------------------------*/
 #school_ex {
@@ -634,6 +694,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   bottom: 177px;
   right: 45px;
 }
+
+/*#school_ex .school_ex_img .layer_00 {
+  position: absolute;
+  top: 139px;
+  right: -50px;
+  opacity: 0.23;
+}
+
+#school_ex .school_ex_img .layer_01 {
+  position: absolute;
+  top: 142px;
+  right: -63px;
+  mix-blend-mode: darken;
+}*/
 
 /*--------------------------------------------------------------
 # Contact Section

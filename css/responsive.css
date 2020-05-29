@@ -3,6 +3,15 @@
 		top: -60px;
   	left: -100px;
 	}
+	/*--------------------------------------------------------------
+	# Membership Section
+	--------------------------------------------------------------*/
+	#membership .membership_img .img_content .img_title {
+		font-size: 32px;
+	}
+	#membership .membership_img .img_content p {
+		font-size: 16px;
+	}
 }
 @media only screen and (min-width: 600px) {
 	/*--------------------------------------------------------------
@@ -38,6 +47,31 @@
 	#events .float_01 {
 		top: -120px;
   	left: -150px;
+	}
+	/*--------------------------------------------------------------
+	# Membership Section
+	--------------------------------------------------------------*/
+	#membership {
+  	padding:  127px 0 86px;
+  }
+	#membership .section_header .section_title {
+		font-size: 58.5px;
+	}
+	#membership .membership_img .overlay_leaves {
+		top: 33px;
+	}
+	#membership .membership_img .img_content {
+		top: 145px;
+		left: auto;
+  	right: 150px;
+  	width: 366px;
+	}
+	#membership .membership_img .img_content .img_title {
+		font-size: 50px;
+	}
+	#membership .membership_img .img_content p {
+		font-size: 21px;
+		letter-spacing: 1.58px;
 	}
 	/*--------------------------------------------------------------
 	# School Excursion Section
@@ -118,7 +152,7 @@
 	#events .float_03 {
 		max-height: 100%;
 	}
-	#events .flex_container {
+	#events .flex_container, #membership .flex_container {
 		flex-wrap: nowrap;
 	}
 	#events .events_img {
@@ -137,6 +171,29 @@
 	}
 	#events .events_content .events_list {
 	  text-align: right;
+	}
+	/*--------------------------------------------------------------
+	# Membership Section
+	--------------------------------------------------------------*/
+	#membership {
+		padding: 0;
+		padding-top: 127px;
+		height: 768px;
+	}
+	#membership .membership_content {
+		padding-top: 71px;
+	}
+	#membership .membership_img {
+		margin: 0;
+		width: 100%;
+    display: flex;
+    justify-content: center;
+	}
+	#membership .membership_img .main_img {
+		position: relative;
+	}
+	#membership .membership_img .overlay_leaves {
+		right: -28px;
 	}
 	/*--------------------------------------------------------------
 	# School Excursion Section
@@ -232,6 +289,18 @@
     flex-grow: 1;
     padding-right: 0;
   }
+  /*--------------------------------------------------------------
+	# Membership Section
+	--------------------------------------------------------------*/
+	#membership .membership_img {
+		justify-content: flex-end;
+	}
+	#membership .membership_img .main_img {
+		right: 64px;
+	}
+	#membership .membership_img .overlay_leaves {
+		right: -70px;
+	}
   /*--------------------------------------------------------------
 	# School Excursion Section
 	--------------------------------------------------------------*/
