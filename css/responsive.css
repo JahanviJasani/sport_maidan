@@ -40,6 +40,18 @@
   	left: -150px;
 	}
 	/*--------------------------------------------------------------
+	# School Excursion Section
+	-------------------------------------------------------------- */
+	#school_ex .section_header .section_title {
+		font-size: 56px;
+	}
+	#school_ex .section_header .section_title span {	
+		font-size: 36px;
+	}
+	#school_ex .school_ex_content p {
+		font-size: 13px;
+	}
+	/*--------------------------------------------------------------
 	# Contact Section
 	--------------------------------------------------------------*/
 	#contact {
@@ -127,6 +139,24 @@
 	  text-align: right;
 	}
 	/*--------------------------------------------------------------
+	# School Excursion Section
+	-------------------------------------------------------------- */
+	#school_ex {
+		padding: 0;
+	}
+	#school_ex .web_container {
+		padding: 0;
+	}
+	#school_ex .flex_container {
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+		height: 100%;
+	}
+	#school_ex .school_ex_img {
+		margin: 0;
+	}
+	/*--------------------------------------------------------------
 	# Contact Section
 	--------------------------------------------------------------*/
 	#contact {
@@ -162,6 +192,27 @@
 	}
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1365px) {
+	/*--------------------------------------------------------------
+	# School Excursion Section
+	-------------------------------------------------------------- */
+	#school_ex {
+		height: 768px;
+		overflow: hidden;
+	}
+	#school_ex .school_ex_content {
+	  padding: 0 30px;
+	  /*padding: 92px 0;*/
+	  width: 50%;
+	}
+	#school_ex .school_ex_img {
+		width: 50%;
+	}
+	#school_ex .school_ex_img img {
+		height: 100%;
+	}
+}
+
 @media only screen and (min-width: 1200px) {
 	.web_container {
 		padding: 0 50px;
@@ -181,6 +232,28 @@
     flex-grow: 1;
     padding-right: 0;
   }
+  /*--------------------------------------------------------------
+	# School Excursion Section
+	--------------------------------------------------------------*/
+  #school_ex .section_header .section_title {
+		font-size: 66.5px;
+	}
+	#school_ex .section_header .section_title span {	
+		font-size: 42px;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	/*--------------------------------------------------------------
+	# School Excursion Section
+	-------------------------------------------------------------- */
+	#school_ex .school_ex_content {
+	  padding: 0 80px;
+	  max-width: 646px;
+	}
+	#school_ex .school_ex_img img {
+		height: auto;
+	}
 }
 
 @media only screen and (min-width: 1366px) {

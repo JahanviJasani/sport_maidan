@@ -407,6 +407,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-width: 85px;
 }
 
+.section_header {
+  margin-bottom: 57px;
+}
+
+.section_header .section_title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Athene";
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: 2.93px;
+}
+
+.section_header .section_title span {
+  font-family: "Montserrat";
+  font-weight: 600;
+  letter-spacing: 1.35px;
+}
+
 /*--------------------------------------------------------------
 # Locations Section
 --------------------------------------------------------------*/
@@ -547,6 +567,75 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# School Excursion Section
+--------------------------------------------------------------*/
+#school_ex {
+  position: relative;
+  background: url(../img/section_bg.png) center;
+  background-size: cover;
+  padding: 120px 0 60px;
+}
+
+#school_ex .section_header {
+  margin-bottom: 30px;
+}
+
+#school_ex .section_header .section_title {
+  font-size: 38px;
+  align-items: flex-start;
+}
+
+#school_ex .section_header .section_title span {
+  font-size: 24px;  
+}
+
+#school_ex .school_ex_content .school_ex_text {
+  position: relative;
+  padding: 7px;
+}
+
+#school_ex .school_ex_content .school_ex_text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255,0.29);
+}
+
+#school_ex .school_ex_content p {
+  position: relative;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.62;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+#school_ex .school_ex_content p span {
+  font-weight: 600;
+  display: inline-block;
+}
+
+#school_ex .school_ex_content .btn_wrapper {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#school_ex .school_ex_img {
+  position: relative;
+  margin-top: 30px;
+}
+
+#school_ex .school_ex_img .overlay_leaves {
+  position: absolute;
+  bottom: 177px;
+  right: 45px;
+}
+
+/*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 #contact {
@@ -556,22 +645,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .section_header .section_title {
-  display: flex;
-  justify-content: center;
-  font-family: "Athene";
   font-size: 38px;
-  font-weight: normal;
-  line-height: 1.91;
-  letter-spacing: 2.93px;
-  margin-bottom: 0;
 }
 
 #contact .section_header .section_title span {
-  font-family: "Montserrat";
   margin-left: 19px;
-  font-style: 34px;
-  font-weight: 600;
-  letter-spacing: 1.35px;
+  font-size: 34px;  
 }
 
 #contact .contact_form_area {
@@ -583,7 +662,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index: 2;
   max-width: 446px;
   margin-left: auto;
-  margin-top: 15px;
 }
 
 #contact .contact_form .form-group {

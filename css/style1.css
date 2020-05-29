@@ -288,19 +288,13 @@ section {
 /*--------------------------------------------------------------
 # School Excursion Section
 --------------------------------------------------------------*/
-#school_ex {
-  background-size: cover;
-  padding: 120px 0 100px;
-}
+
 
 #school_ex .flex_container {
   align-items: center;
 }
 
-#school_ex .school_ex_content {
-  padding: 92px 80px 0;
-  max-width: 646px;
-}
+
 
 #school_ex .school_ex_content h1 {
   display: flex;

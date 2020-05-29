@@ -37,15 +37,6 @@
 	.flex_container {
 		flex-wrap: wrap;
 	}
-	#events {
-		padding: 140px 0 120px;
-	}
-	#events .events_img {
-		display: none;
-	}
-	#events .events_content .events_list {
-		text-align: center;
-	}
 	#membership .membership_content {
 		text-align: center;
 		flex: 100%;
@@ -71,13 +62,7 @@
 }
 
 @media only screen and (max-width: 670px) {
-	#locations .locations_wrapper {
-		flex-wrap: wrap;
-		margin: 0;
-	}
-	#locations .locations_wrapper .location_single {
-		margin: 30px;
-	}
+	
 	#membership .membership_img .overlay_leaves {
 		right: -28px;
 	}
@@ -90,20 +75,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-	#locations .locations_wrapper .location_single {
-		margin: 0 38.5px;
-	}
-	#events {
-		padding: 0;
-		background-position: -150px -10px;
-	}
-	#events .events_content {
-	  flex: 53%;
-	  padding-right: 1%;
-	}
-	#events .events_content .events_list .event_title {
-		font-size: 21px;
-	}
+	
 	#membership .membership_img .main_img {
 	  position: absolute;
 	  right: 10px;
@@ -136,16 +108,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-	.web_container {
-		padding: 0 50px;
-	}
-	.cta {
-		width: 203px;
-		letter-spacing: 6px;
-	}
-	.nav-menu a {
-		letter-spacing: 3.12px;
-	}
+	
 	/*--------------------------------------------------------------
 	# Hero Section
 	--------------------------------------------------------------*/
@@ -203,26 +166,9 @@
 	#hero .slide_two .hero_img .main_img, #hero .slide_three .hero_img .main_img, #hero .slide_four .hero_img .main_img {
 		right: 4%;
 	}
-	/*--------------------------------------------------------------
-	# Events Section
-	--------------------------------------------------------------*/
-	#events {
-  	padding-left: 84px;
-  }
-  #events .events_content {
-  	flex: auto;
-    flex-grow: 1;
-    padding-right: 0;
-  }
-  #events .float_03 {
-  	right: 28px;
-  }
 }
 
 @media only screen and (min-width: 1366px) {
-	.web_container {
-		padding: 0 90px;
-	}
 	/*--------------------------------------------------------------
 	# Hero Section
 	--------------------------------------------------------------*/
@@ -250,13 +196,6 @@
     bottom: 140px;
     right: 90px;
 	}
-	#events .events_content {
-		padding-top: 226px;
-		align-self: auto;
-	}
-	#contact {
-	  padding: 128px 0 0;
-	}
 }
 
 @media only screen and (max-height: 767px) {
@@ -266,47 +205,20 @@
 	#hero, #hero .hero_content, #hero .hero_img {
 		height: auto;
 	}
-	section {
-		height: auto;
-	}
-	#footer {
-		position: relative;
-		bottom: 0;
-		padding: 15px 0;
-	}
+	
 }
 
 @media only screen and (min-height: 769px) {
-	#locations, #events {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
 	#membership .membership_content {
 		padding: 0;
 		align-self: center;
 	}
-	#contact .flex_container {
-		align-items: center;
-	}
-	#contact .contact_content .overlay_leaves {
-		bottom: 0;
-	}
+
 }
 
 @media only screen and (min-height: 851px) {
 	#hero, #hero .hero_content, #hero .hero_img {
 		height: auto;
 	}
-	section {
-		height: auto;
-	}
-	#footer {
-		position: relative;
-		bottom: 0;
-		padding: 15px 0;
-	}
-	#footer .footer_inner {
-		align-items: center;
-	}
+
 }
