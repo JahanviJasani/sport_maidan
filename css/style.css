@@ -253,7 +253,7 @@ img {
   margin-right: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .nav-menu-container {
     display: none;
   }
@@ -307,7 +307,7 @@ img {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #mobile-nav-toggle {
     display: inline;
   }
@@ -528,6 +528,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #hero .slide_img img {
   width: auto;
+  margin-left: auto;
 }
 
 #hero .slide_img .overlay_leaves {

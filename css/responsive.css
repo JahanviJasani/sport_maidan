@@ -203,6 +203,21 @@
 		padding: 30px 0;
 	}
 	/*--------------------------------------------------------------
+	# Hero Section
+	--------------------------------------------------------------*/
+	#hero .slide_one .slide_img .overlay_leaves {
+    top: 33px;
+    right: -70px;
+	}	 
+	#hero .slide_two .slide_img .overlay_leaves {
+		top: 64px;
+		right: 24px;
+	}
+	#hero .slide_img .overlay_leaves {
+		top: 58px;
+		right: 27px;
+	}
+	/*--------------------------------------------------------------
 	# Contact Section
 	--------------------------------------------------------------*/
 	#contact .section_header .section_title {
@@ -238,14 +253,17 @@
 		padding: 0;
 		overflow: hidden;
 	}
+	#hero .slide {
+		overflow-x: hidden;
+	}
 	#hero .slide_inner {
 		height: 768px;
 		align-items: center;
 	}
-	#hero .slide_content {
-		flex: 30%;
-	}
 	#hero .slide_img {
+		/*flex-grow: 1;*/
+		flex: 50%;
+		right: -20px;
 		margin: 0;
 	}
 	/*--------------------------------------------------------------
@@ -365,6 +383,16 @@
 	}
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
+	#hero .slide_one .main_img > img {
+		width: 92%;
+		margin-left: 0;
+	}
+	#hero .slide_one .slide_img .overlay_leaves {
+		right: 0;
+	}
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1365px) {
 	/*--------------------------------------------------------------
 	# School Excursion Section
@@ -389,6 +417,17 @@
 @media only screen and (min-width: 1200px) {
 	.web_container {
 		padding: 0 50px;
+	}
+	#hero .slide_img {
+		/*flex-grow: 1;
+		flex: auto;*/
+		right: 0;
+	}
+	#hero .slide_three .slide_img .slide_logo {
+		bottom: 46px;
+	}
+	#hero .slide_four .slide_img .slide_logo {
+		bottom: 27px;
 	}
 	/*--------------------------------------------------------------
 	# Events Section
@@ -429,6 +468,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
+	#hero .slide_one .slide_img img {
+    margin-right: 95px;
+    margin-top: 30px;
+	}
 	/*--------------------------------------------------------------
 	# School Excursion Section
 	-------------------------------------------------------------- */
