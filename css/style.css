@@ -253,11 +253,11 @@ img {
   margin-right: 0;
 }
 
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {*/
   .nav-menu-container {
-    display: none;
+    display: none !important;
   }
-}
+/*}*/
 
 /* Nav Meu Styling */
 .nav-menu a {
@@ -288,30 +288,50 @@ img {
 }
 
 /* Mobile Nav Toggle */
-#mobile-nav-toggle {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999;
-  margin: 20px 20px 0 0;
-  border: 0;
+.mobile_nav_toggle {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #000;
+  border-radius: 50px;
   background: none;
-  font-size: 24px;
-  display: none;
   transition: all 0.4s;
   outline: none;
   cursor: pointer;
+  z-index: 999;
 }
 
-#mobile-nav-toggle i {
-  color: #fff;
+.mobile_nav_toggle:hover {
+  border-color: #ffcc00;
+  background: #ffcc00;
 }
 
-@media (max-width: 992px) {
-  #mobile-nav-toggle {
-    display: inline;
+.mobile_nav_toggle:before, .mobile_nav_toggle:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.4s;
+}
+
+.mobile_nav_toggle:before {
+  top: 50%;
+  margin-top: -8px;
+}
+
+.mobile_nav_toggle:after {
+  top: 50%;
+  margin-top: 4px;
+}
+
+/*@media (max-width: 992px) {*/
+  #mobile_nav_toggle {
+    display: inline-block;
   }
-}
+/*}*/
 
 /* Mobile Nav Styling */
 #mobile-nav {
@@ -373,7 +393,7 @@ body.mobile-nav-active #mobile-nav {
   left: 0;
 }
 
-body.mobile-nav-active #mobile-nav-toggle {
+body.mobile-nav-active #mobile_nav_toggle {
   color: #fff;
 }
 
