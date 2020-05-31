@@ -15,6 +15,9 @@
 }
 
 @media only screen and (min-width: 480px) {
+	#mobile_nav ul li a {
+		font-size: 16px;
+	}
 	#hero .slide_img .slide_logo img {
 		max-width: 100px;
 	}
@@ -23,6 +26,13 @@
 	.cta {
 		letter-spacing: 5px;
 		width: 202px;
+	}
+	#mobile_nav {
+		left: -60%;
+		width: 60%;
+	}
+	#mobile_nav ul li a {
+		font-size: 18px;
 	}
 	/*--------------------------------------------------------------
 	# Hero Section
@@ -351,7 +361,7 @@
 	# Contact Section
 	--------------------------------------------------------------*/
 	#contact {
-		padding: 130px 0 169px;
+		padding: 140px 0 170px;
 	}
 	#contact .contact_form {
 		width: 446px;

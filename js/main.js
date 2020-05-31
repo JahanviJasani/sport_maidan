@@ -10,6 +10,38 @@ jQuery(document).ready(function ($) {
     }
   });
 
+
+  if ($('#nav_menu_container').length) {
+    var $mobile_nav = $('#nav_menu_container').clone().prop({
+      id: 'mobile_nav'
+    });
+    $mobile_nav.find('> ul').attr({
+      'class': '',
+      'id': ''
+    });
+    $('body').append($mobile_nav);
+    $('body').append('<div id="mobile_body_overly"></div>');
+
+    $(document).on('click', '.mobile_nav_toggle', function (e) {
+      $('body').toggleClass('mobile_nav_active');
+      $('.mobile_nav_toggle').toggleClass('toggle_active');
+      $('#mobile_body_overly').toggle();
+    });
+
+    $( window ).resize(function(e) {
+      var container = $("#mobile_nav, .mobile_nav_toggle");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        if ($('body').hasClass('mobile_nav_active')) {
+          $('body').removeClass('mobile_nav_active');
+          $('.mobile_nav_toggle').toggleClass('toggle_active');
+          $('#mobile_body_overly').fadeOut();
+        }
+      }
+    });
+  } else if ($("#mobile_nav, .mobile_nav_toggle").length) {
+    $("#mobile_nav, .mobile_nav_toggle").hide();
+  }
+
   // Smoth scroll on page hash links
   $('a[href*="#"]:not([href="#"])').on('click', function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -29,10 +61,10 @@ jQuery(document).ready(function ($) {
         $(this).closest('li').addClass('menu-active');
       }
 
-      if ($('body').hasClass('mobile-nav-active')) {
-        $('body').removeClass('mobile-nav-active');
-        $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-        $('#mobile-body-overly').fadeOut();
+      if ($('body').hasClass('mobile_nav_active')) {
+        $('body').removeClass('mobile_nav_active');
+        $('.mobile_nav_toggle').toggleClass('toggle_active');
+        $('#mobile_body_overly').fadeOut();
       }
       return false;
     }
