@@ -210,7 +210,6 @@ img {
 --------------------------------------------------------------*/
 #header {
   padding: 25px 0;
-  /*padding: 50px 0;*/
   position: fixed;
   left: 0;
   top: 0;
@@ -239,16 +238,16 @@ img {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
-.nav-menu {
+.nav_menu {
   display: flex;
 }
 
-.nav-menu li {
+.nav_menu li {
   position: relative;
   margin: 0 15px;
 }
 
-.nav-menu li:last-child {
+.nav_menu li:last-child {
   margin-right: 0;
 }
 
@@ -259,7 +258,7 @@ img {
 }
 
 /* Nav Meu Styling */
-.nav-menu a {
+.nav_menu a {
   font-size: 12px;
   padding: 0 5px 7px;
   display: inline-block;
@@ -270,7 +269,7 @@ img {
   outline: none;
 }
 
-.nav-menu > li > a:before {
+.nav_menu > li > a:before {
   content: "";
   position: absolute;
   width: 57px;
@@ -282,7 +281,7 @@ img {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .menu-active > a:before {
+.nav_menu a:hover:before, .nav_menu li:hover > a:before, .nav_menu .menu-active > a:before {
   transform: translateX(-50%) scaleX(1);
 }
 
@@ -328,12 +327,6 @@ img {
 
 .mobile_nav_toggle .nav_toggle_text:hover:after {
   transform: translateX(0);
-}
-
-@media (max-width: 992px) {
-  .mobile_nav_toggle {
-    display: block;
-  }
 }
 
 /* Mobile Nav Styling */

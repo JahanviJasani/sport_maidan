@@ -252,7 +252,10 @@
 }
 
 @media only screen and (min-width: 992px) {
-	.nav-menu li {
+	.mobile_nav_toggle {
+    	display: none;
+  	}
+	.nav_menu li {
 		margin: 0 16px;
 	}
 	/*--------------------------------------------------------------
@@ -429,8 +432,6 @@
 		padding: 0 50px;
 	}
 	#hero .slide_img {
-		/*flex-grow: 1;
-		flex: auto;*/
 		right: 0;
 	}
 	#hero .slide_three .slide_img .slide_logo {
@@ -469,6 +470,9 @@
   /*--------------------------------------------------------------
 	# School Excursion Section
 	--------------------------------------------------------------*/
+	#school_ex .flex_container {
+		justify-content: space-between;
+	}
   #school_ex .section_header .section_title {
 		font-size: 66.5px;
 	}
