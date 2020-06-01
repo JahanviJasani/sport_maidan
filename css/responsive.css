@@ -396,7 +396,7 @@
 	#footer {
 		padding: 0;
 		position: fixed;
-	  bottom: 30px;
+	  bottom: 0;
 	  right: 0;
 	  left: 0;
 	}
@@ -405,8 +405,11 @@
 	  justify-content: space-between;
 	  align-items: center;
 	}
-	#footer .footer_left .copyright {
-		margin: 0;
+	#footer .footer_left {
+		padding: 32px 0;
+	}
+	#footer .footer_right {
+		padding: 26px 0;
 	}
 }
 
