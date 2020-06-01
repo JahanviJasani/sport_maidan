@@ -513,3 +513,15 @@
 	  left: -245px;
 	}
 }
+
+@media only screen and (min-width: 1400px) {
+	#school_ex .school_ex_content {
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.web_container {
+		padding: 0 150px;
+	}
+}
