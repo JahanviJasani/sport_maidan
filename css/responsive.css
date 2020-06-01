@@ -233,6 +233,10 @@
 		top: 58px;
 		right: 27px;
 	}
+	#school_ex .school_ex_img .overlay_leaves {
+	  bottom: 177px;
+	  right: 45px;
+	}
 	/*--------------------------------------------------------------
 	# Contact Section
 	--------------------------------------------------------------*/
@@ -280,7 +284,6 @@
 		align-items: center;
 	}
 	#hero .slide_img {
-		/*flex-grow: 1;*/
 		flex: 50%;
 		right: -20px;
 		margin: 0;

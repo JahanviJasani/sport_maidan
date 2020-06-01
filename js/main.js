@@ -78,7 +78,7 @@ jQuery(document).ready(function ($) {
     dots: true,
     dotsContainer: '#custom_dots',
     nav: false,
-    autoplayTimeout: 7000,
+    autoplayTimeout: 5000,
     autoplaySpeed: 2000
   }); 
 

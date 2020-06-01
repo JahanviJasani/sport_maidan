@@ -879,8 +879,8 @@ body.mobile_nav_active #mobile_nav {
 
 #school_ex .school_ex_img .overlay_leaves {
   position: absolute;
-  bottom: 177px;
-  right: 45px;
+  bottom: 15%;
+  right: 0;
 }
 
 /*#school_ex .school_ex_img .layer_00 {
