@@ -56,8 +56,8 @@ jQuery(document).ready(function ($) {
         scrollTop: target.offset().top
       }, 1500, 'easeInOutExpo');
 
-      if ($(this).parents('.nav-menu').length) {
-        $('.nav-menu .menu-active').removeClass('menu-active');
+      if ($(this).parents('.nav_menu').length) {
+        $('.nav_menu .menu-active').removeClass('menu-active');
         $(this).closest('li').addClass('menu-active');
       }
 

@@ -755,17 +755,17 @@ body.mobile_nav_active #mobile_nav {
 # Membership Section
 --------------------------------------------------------------*/
 #membership {
-  padding: 100px 0 60px;
+  padding: 60px 0;
   background: url(../img/section_bg.png) center;
   background-size: cover;
 }
 
-#membership .section_header .section_title {
-  font-size: 38px;
+#membership .section_header {
+  margin-bottom: 30px;
 }
 
-#membership .membership_sports {
-  margin-top: 55px;
+#membership .section_header .section_title {
+  font-size: 38px;
 }
 
 #membership .btn_wrapper {
@@ -773,9 +773,13 @@ body.mobile_nav_active #mobile_nav {
   text-align: center;
 }
 
+#membership .membership_content {
+  margin-top: 40px;
+  order: 1;
+}
+
 #membership .membership_img {
   position: relative;
-  margin-top: 30px;
 }
 
 #membership .membership_img .overlay_leaves {
@@ -813,7 +817,7 @@ body.mobile_nav_active #mobile_nav {
   position: relative;
   background: url(../img/section_bg.png) center;
   background-size: cover;
-  padding: 120px 0 60px;
+  padding: 30px 0;
 }
 
 #school_ex .section_header {
@@ -827,6 +831,11 @@ body.mobile_nav_active #mobile_nav {
 
 #school_ex .section_header .section_title span {
   font-size: 24px;  
+}
+
+#school_ex .school_ex_content {
+  margin-top: 40px;
+  order: 1;
 }
 
 #school_ex .school_ex_content .school_ex_text {
@@ -860,13 +869,12 @@ body.mobile_nav_active #mobile_nav {
 }
 
 #school_ex .school_ex_content .btn_wrapper {
-  margin-top: 15px;
+  margin-top: 30px;
   text-align: center;
 }
 
 #school_ex .school_ex_img {
   position: relative;
-  margin-top: 30px;
 }
 
 #school_ex .school_ex_img .overlay_leaves {
@@ -895,7 +903,7 @@ body.mobile_nav_active #mobile_nav {
 #contact {
   background: url('../img/contact_bg.png') left;
   background-size: cover;
-  padding: 100px 0 60px;
+  padding: 60px 0;
 }
 
 #contact .section_header .section_title {

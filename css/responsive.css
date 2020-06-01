@@ -178,6 +178,9 @@
 		font-size: 21px;
 		letter-spacing: 1.58px;
 	}
+	#membership .membership_content, #school_ex .school_ex_content {
+		margin-top: 70px;
+	}
 	/*--------------------------------------------------------------
 	# School Excursion Section
 	-------------------------------------------------------------- */
@@ -189,6 +192,9 @@
 	}
 	#school_ex .school_ex_content p {
 		font-size: 13px;
+	}
+	#school_ex .school_ex_content .btn_wrapper {
+		margin-top: 54px;
 	}
 	/*--------------------------------------------------------------
 	# Contact Section
@@ -327,11 +333,15 @@
 		padding-top: 127px;
 		height: 768px;
 	}
+	#membership .section_header {
+		margin-bottom: 57px;
+	}
 	#membership .membership_content {
 		padding-top: 71px;
+		margin: 0;
+		order: 0;
 	}
 	#membership .membership_img {
-		margin: 0;
 		width: 100%;
     display: flex;
     justify-content: center;
@@ -357,8 +367,9 @@
 		flex-wrap: nowrap;
 		height: 100%;
 	}
-	#school_ex .school_ex_img {
+	#school_ex .school_ex_content {
 		margin: 0;
+		order: 0;
 	}
 	/*--------------------------------------------------------------
 	# Contact Section
