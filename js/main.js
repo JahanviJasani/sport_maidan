@@ -10,7 +10,6 @@ jQuery(document).ready(function ($) {
     }
   });
 
-
   if ($('#nav_menu_container').length) {
     var $mobile_nav = $('#nav_menu_container').clone().prop({
       id: 'mobile_nav'
@@ -87,28 +86,27 @@ jQuery(document).ready(function ($) {
 	});
 
 
-$('#contactForm').submit(function(event){
-  var form = $(this);
-  if(form[0].checkValidity() === false){    
-    if(form[0][1].checkValidity() === false) {
-      feedbackText($('.invalid-email'), form[0][1].value, "email id");
-      $(form[0][1]).blur(function(){
-          feedbackText($('.invalid-email'), form[0][1].value, "email id");
-      });
+  $('#contactForm').submit(function(event){
+    var form = $(this);
+    if(form[0].checkValidity() === false){    
+      if(form[0][1].checkValidity() === false) {
+        feedbackText($('.invalid-email'), form[0][1].value, "email id");
+        $(form[0][1]).blur(function(){
+            feedbackText($('.invalid-email'), form[0][1].value, "email id");
+        });
+      }
+      if(form[0][2].checkValidity() === false) {
+        feedbackText($('.invalid-phone'), form[0][2].value, "phone no.");
+        $(form[0][2]).blur(function(){
+            feedbackText($('.invalid-phone'), form[0][2].value, "phone no.");
+        });
+      }
+      form.addClass('was-validated');
     }
-    if(form[0][2].checkValidity() === false) {
-      feedbackText($('.invalid-phone'), form[0][2].value, "phone no.");
-      $(form[0][2]).blur(function(){
-          feedbackText($('.invalid-phone'), form[0][2].value, "phone no.");
-      });
-    }
-    form.addClass('was-validated');
-  }
-  else{
-    $('#contact_loader').css('display','flex');
-    // $('#contact_loader .loader').css('display','block');
-    $("#contact_success").css('display','flex')
-    var jqxhr = $.post( "http://corporateolympics.sportsmaidan.com/api/sports/send_mail/",{ name: form[0][0].value, email: form[0][1].value, phoneno: form[0][2].value, message:  form[0][3].value} )
+    else{
+      $('#contact_loader').css('display','flex');
+      $("#contact_success").css('display','flex')
+      var jqxhr = $.post( "http://corporateolympics.sportsmaidan.com/api/sports/send_mail/",{ name: form[0][0].value, email: form[0][1].value, phoneno: form[0][2].value, message:  form[0][3].value} )
       .done(function() {
         $('#contact_loader .loader').css('display','none');
         $("#contact_error").css('display','none');
@@ -141,6 +139,15 @@ $('#contactForm').submit(function(event){
   $(document).on('click', '.close', function () {
     $('.contact_alert').fadeOut(200);
     $('#contact_loader').delay(500).fadeOut('slow');
+  });
+
+  $('.events_nav a').click(function(){
+    $('.events_nav li').removeClass('active');
+    $(this).parent().addClass('active');
+    $('.events_inner').hide();
+    var activeTab = $(this).attr('href');
+    $(activeTab).fadeIn();
+    return false;
   });
 
 });
