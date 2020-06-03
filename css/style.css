@@ -1078,6 +1078,7 @@ body.mobile_nav_active #mobile_nav {
   display: flex;
   flex-direction: row;
   height: 410px;
+  padding: 42px 0;
 }
 
 .events_wrapper .events_img .overlay .box {
@@ -1085,12 +1086,15 @@ body.mobile_nav_active #mobile_nav {
   text-align: center;
 }
 
-.events_wrapper .events_img .overlay .box:nth-child(odd) {
-  transform: translateY(84px);
+.events_wrapper .events_img .overlay .box:nth-child(odd) img {
+  transform: translateY(42px);
+}
+.events_wrapper .events_img .overlay .box:nth-child(even) img {
+  transform: translateY(-42px);
 }
 
 .events_wrapper .events_img .events_more_info {
-  margin: 12px 0;
+  margin-top: -28px;
 }
 
 .events_wrapper .events_img .events_cta {
@@ -1135,8 +1139,9 @@ body.mobile_nav_active #mobile_nav {
 }
 
 .events_wrapper .events_text {
+  overflow: hidden;
   margin-top: 52%;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 .events_wrapper .events_content .events_subtitle {
