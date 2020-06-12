@@ -653,21 +653,29 @@ body.mobile_nav_active #mobile_nav {
 
 #locations .location_single .location_content {
   position: absolute;
-  top: 101px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 95px;
+  width: 100%;
+  text-align: center;
 }
 
 #locations .location_single .location_content a {
+  display: inline-block;
   font-size: 30px;
   line-height: 1;
   letter-spacing: 2.7px;
   color: #ffcc00;
-  margin: 0;
+  margin-bottom: 7px;
 }
 
 #locations .locations_wrapper .location_single:hover .location_content a {
   color: #fff;
+}
+
+#locations .location_single .location_content p {
+  font-size: 12px;
+  font-weight: 800;
+  color: #f1f3ed;
+  letter-spacing: 0.9px;
 }
 
 #locations  .location_single .location_bg {
