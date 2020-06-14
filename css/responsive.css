@@ -19,8 +19,16 @@
 		padding: 42px 15px 5px;
 		margin:  0 10px;
 	}
+	.events_wrapper .events_header .events_title {
+		font-size: 66px;
+	}
+	.events_wrapper .events_header .events_title span {
+		font-size: 34px;
+	}
 	.events_wrapper .events_content .events_subtitle {
 		font-size: 22px;
+		letter-spacing: 1.8px;
+		margin: 15px 0;
 	}
 	.events_wrapper .events_content .events_desc {
 		font-size: 16px;
@@ -226,7 +234,7 @@
 	# Events Page
 	--------------------------------------------------------------*/
 	.events_wrapper {
-		padding: 0 35px 58px;
+		padding: 0 35px 57px;
 	}
 	.events_wrapper .events_img .overlay {
 	  padding: 42px 0;
@@ -236,6 +244,19 @@
 	}
 	.events_wrapper .events_img .events_more_info {
 		bottom: -10%;
+	}
+	.events_wrapper .events_content {
+		padding: 30px 40px 100px;
+	}
+	.events_wrapper .events_header .events_title {
+		font-size: 92px;
+	}
+	.events_wrapper .events_header .events_title span {
+		font-size: 44px;
+	}
+	.events_wrapper .events_content .events_subtitle {
+		font-size: 29px;
+		letter-spacing: 3.6px;
 	}
 }
 
@@ -473,16 +494,42 @@
 	.events_wrapper .events_inner {
 		flex-wrap: nowrap;
 	}
+	.events_wrapper .event_logo {
+	  right: -12px;
+	  bottom: -30px;
+	}
+	.events_wrapper .events_content {
+		box-shadow: none;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+	}
 	.events_wrapper .events_content .events_header {
-		right: 0;
-		left: auto;	
+		position: absolute;
+	  top: 70px;
+	  right: 0;
 	}
 	.events_wrapper .events_header .events_title {
 		color: #fff;
+		justify-content: flex-start;
+		font-size: 112px;
+		line-height: 86px;
+  	letter-spacing: 6.08px;
+	}
+	.events_wrapper .events_header .events_title span {
+		font-size: 52px;
+		line-height: 41px;
 	}
 	.events_wrapper .events_text {
 		margin-top: 52%;
 		margin-left: 10px;	
+	}
+	.events_wrapper .events_content .events_subtitle {
+		font-size: 22px;
+		letter-spacing: 1.8px;
+	}
+	.events_wrapper .events_content .events_desc {
+		width: 295px;
 	}
 }
 
@@ -578,6 +625,13 @@
 	}
 	#school_ex .section_header .section_title span {	
 		font-size: 42px;
+	}
+	/*--------------------------------------------------------------
+	# Events Page
+	--------------------------------------------------------------*/
+	.events_wrapper .event_logo {
+	  right: -20px;
+	  bottom: 0;
 	}
 }
 
