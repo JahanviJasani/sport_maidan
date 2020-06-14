@@ -178,6 +178,7 @@ img {
   border: none;
   outline: none;
   margin-left: 50px;
+  cursor: pointer;
 }
 
 #contact_loader .contact_alert button img {
@@ -1036,7 +1037,7 @@ body.mobile_nav_active #mobile_nav {
 .events_wrapper {
   position: relative;
   background: #fff;
-  padding: 0 50px 58px;
+  padding: 0 35px 58px;
 }
 
 .events_wrapper .events_nav {

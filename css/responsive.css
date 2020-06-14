@@ -463,6 +463,13 @@
 	}
 }
 
+@media only screen and (min-width: 1024px) {
+	.events_wrapper {
+	  padding-right: 50px;
+	  padding-left: 50px;
+	}
+}
+
 @media only screen and (min-width: 1200px) {
 	.web_container {
 		padding: 0 50px;
