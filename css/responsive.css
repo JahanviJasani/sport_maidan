@@ -12,6 +12,19 @@
 	#membership .membership_img .img_content p {
 		font-size: 16px;
 	}
+	/*--------------------------------------------------------------
+	# Events Page
+	--------------------------------------------------------------*/
+	.events_wrapper .nav_tab {
+		padding: 42px 15px 5px;
+		margin:  0 10px;
+	}
+	.events_wrapper .events_content .events_subtitle {
+		font-size: 22px;
+	}
+	.events_wrapper .events_content .events_desc {
+		font-size: 16px;
+	}
 }
 
 @media only screen and (min-width: 480px) {
@@ -209,7 +222,21 @@
 		align-items: flex-end;
   	justify-content: flex-end;	
 	}
-
+	/*--------------------------------------------------------------
+	# Events Page
+	--------------------------------------------------------------*/
+	.events_wrapper {
+		padding: 0 35px 58px;
+	}
+	.events_wrapper .events_img .overlay {
+	  padding: 42px 0;
+	}
+	.events_wrapper .events_img .overlay .box {
+		margin: 0 6.5px;
+	}
+	.events_wrapper .events_img .events_more_info {
+		bottom: -10%;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -260,6 +287,16 @@
   #contact .contact_content .overlay_leaves img {
 	  max-width: 500px;
 	}	
+	/*--------------------------------------------------------------
+	# Events Page
+	--------------------------------------------------------------*/
+	.events_wrapper .events_img .events_more_info {
+		position: relative;
+		transform: none;
+		bottom: 0;
+  	left: 0;
+		margin-top: -28px;
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -419,13 +456,33 @@
 		padding: 27px 0;
 	}
 	.events_footer .footer_left {
-		padding-left: 80px;
+		padding-left: 35px;
 		flex-grow: 1;
 		text-align: left;
 	}
 	.events_footer .footer_right {
 		padding-left: 12px;
 		padding-right: 12px;
+	}
+	/*--------------------------------------------------------------
+	# Events Page
+	--------------------------------------------------------------*/
+	.events_wrapper .events_nav {
+		justify-content: flex-end;
+	}
+	.events_wrapper .events_inner {
+		flex-wrap: nowrap;
+	}
+	.events_wrapper .events_content .events_header {
+		right: 0;
+		left: auto;	
+	}
+	.events_wrapper .events_header .events_title {
+		color: #fff;
+	}
+	.events_wrapper .events_text {
+		margin-top: 52%;
+		margin-left: 10px;	
 	}
 }
 

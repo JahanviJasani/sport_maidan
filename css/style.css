@@ -1037,19 +1037,24 @@ body.mobile_nav_active #mobile_nav {
 .events_wrapper {
   position: relative;
   background: #fff;
-  padding: 0 35px 58px;
+  padding: 0 10px 58px;
 }
 
 .events_wrapper .events_nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .events_wrapper .nav_tab {
-  padding: 42px 15px 5px;
-  margin:  0 7px;
+  padding: 30px 10px 5px;
+  margin: 0 5px;
   text-align: center;
   color: #7f7f7f; 
+}
+
+.events_wrapper .nav_tab:nth-child(2) {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .events_wrapper .nav_tab.active {
@@ -1077,6 +1082,7 @@ body.mobile_nav_active #mobile_nav {
   margin-top: 52px;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .events_wrapper .event_logo {
@@ -1092,34 +1098,36 @@ body.mobile_nav_active #mobile_nav {
 .events_wrapper .events_img .overlay {
   display: flex;
   flex-direction: row;
-  height: 410px;
-  padding: 42px 0;
+  padding: 22px 0;
 }
 
 .events_wrapper .events_img .overlay .box {
-  margin: 0 6.5px;
+  margin: 0 4px;
   text-align: center;
 }
 
 .events_wrapper .events_img .overlay .box:nth-child(odd) img {
-  transform: translateY(42px);
+  transform: translateY(12.85%);
 }
 .events_wrapper .events_img .overlay .box:nth-child(even) img {
-  transform: translateY(-42px);
+  transform: translateY(-12.85%);
 }
 
 .events_wrapper .events_img .events_more_info {
-  margin-top: -28px;
+  position: absolute;
+  bottom: -18%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .events_wrapper .events_img .events_cta {
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 2px;
-  line-height: 14px;
+  line-height: 1;
   color: #000;  
   text-transform: uppercase;
-  padding: 2px 12px 4px;
+  padding: 3px 12px 4px;
   border: 1px solid #000;
   background: #fff;
 }
@@ -1131,7 +1139,7 @@ body.mobile_nav_active #mobile_nav {
 .events_wrapper .events_content .events_header {
   position: absolute;
   top: 70px;
-  right: 0;
+  left: 0;
 }
 
 .events_wrapper .events_header .events_title {
@@ -1139,7 +1147,7 @@ body.mobile_nav_active #mobile_nav {
   font-weight: normal;
   line-height: 86px;
   letter-spacing: 6.08px;
-  color: #ffffff;
+  color: #000;
   text-transform: uppercase;
   display: flex;
   align-items: baseline;
@@ -1156,7 +1164,6 @@ body.mobile_nav_active #mobile_nav {
 .events_wrapper .events_text {
   overflow: hidden;
   margin-top: 52%;
-  margin-left: 10px;
 }
 
 .events_wrapper .events_content .events_subtitle {
