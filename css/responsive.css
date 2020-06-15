@@ -1,3 +1,8 @@
+@media only screen and (min-width: 360px) {
+	#membership .membership_img .img_content p {
+		letter-spacing: 1px;
+	}
+}
 @media only screen and (min-width: 412px) {
 	#events .float_01 {
 		top: -60px;
@@ -10,7 +15,7 @@
 		font-size: 32px;
 	}
 	#membership .membership_img .img_content p {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	/*--------------------------------------------------------------
 	# Events Page
@@ -41,6 +46,9 @@
 	}
 	#hero .slide_img .slide_logo img {
 		max-width: 100px;
+	}
+	#membership .membership_img .img_content p {
+		font-size: 16px;
 	}
 }
 @media only screen and (min-width: 600px) {

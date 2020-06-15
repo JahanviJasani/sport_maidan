@@ -659,7 +659,7 @@ body.mobile_nav_active #mobile_nav {
   text-align: center;
 }
 
-#locations .location_single .location_content a {
+#locations .location_single .location_content h3 {
   display: inline-block;
   font-size: 30px;
   line-height: 1;
@@ -668,7 +668,7 @@ body.mobile_nav_active #mobile_nav {
   margin-bottom: 7px;
 }
 
-#locations .locations_wrapper .location_single:hover .location_content a {
+#locations .locations_wrapper .location_single:hover .location_content h3 {
   color: #fff;
 }
 
