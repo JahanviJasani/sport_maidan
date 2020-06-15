@@ -48,10 +48,6 @@ jQuery(document).ready(function ($) {
     var target = $(this.hash);
     if (target.length) {
 
-      if ($('#header').length) {
-        top_space = $('#header').outerHeight();
-      }
-
       $('html, body').animate({
         scrollTop: target.offset().top
       }, 1500, 'easeInOutExpo');
