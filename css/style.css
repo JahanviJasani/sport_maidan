@@ -95,6 +95,17 @@ img {
   max-width: 100%;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button.close img {
+  max-width: 40px;
+}
+
 .cta {
   display: inline-block;
   letter-spacing: 3px;
@@ -174,15 +185,7 @@ img {
 }
 
 #contact_loader .contact_alert button {
-  background: none;
-  border: none;
-  outline: none;
   margin-left: 50px;
-  cursor: pointer;
-}
-
-#contact_loader .contact_alert button img {
-  width: 40px;
 }
 
 @-webkit-keyframes loader {
@@ -668,6 +671,10 @@ body.mobile_nav_active #mobile_nav {
   margin-bottom: 7px;
 }
 
+#locations .location_single .location_content .location_expand {
+  cursor: pointer;
+}
+
 #locations .locations_wrapper .location_single:hover .location_content h3 {
   color: #fff;
 }
@@ -684,6 +691,90 @@ body.mobile_nav_active #mobile_nav {
   left: 210px;
   bottom: 0;
   max-width: 60px;
+}
+/*--------------------------------------------*/
+#locations .location_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+#locations .location_box .box_wrapper {
+  position: relative;
+  padding: 85px 65px;
+  background: #000;
+  display: flex;
+  width: 74%;
+  margin: 0 auto;
+}
+
+#locations .box_carousel {
+  width: 313px;
+  height: 243px;
+  padding: 0 44px;
+  /*overflow: hidden;*/
+}
+
+#locations .box_carousel img {
+  width: auto;
+}
+
+#locations .owl-nav .prev, #locations .owl-nav .next {
+  position: absolute;
+  top: 99px;
+  left: 0;
+}
+
+#locations .owl-nav .next {
+  left: auto;
+  right: 0;
+}
+
+#locations .box_content {
+  margin-left: 100px; 
+} 
+
+#locations .box_content .box_header {
+  display: flex;
+}
+
+#locations .box_header .box_title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 2.7px;
+  color: #ffcc00;
+  margin-right: 19px;
+}
+
+#locations .box_text .description {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.86;
+  letter-spacing: 0.9px;
+  color: #f1f3ed;
+  margin-top: 10px;
+}
+
+#locations .box_text .address {
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 18px;
+  letter-spacing: 0.9px;
+  color: #ffcc00;
+}
+
+#locations .location_box .close {
+  position: absolute;
+  top: 22px;
+  right: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1190,7 +1281,7 @@ body.mobile_nav_active #mobile_nav {
 --------------------------------------------------------------*/
 .footer {
   position: relative;
-  z-index: 999;
+  z-index: 997;
 }
 
 .footer .footer_inner {

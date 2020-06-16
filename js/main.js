@@ -69,7 +69,7 @@ jQuery(document).ready(function ($) {
 
   // Hero carousel
   $('.hero_carousel').owlCarousel({
-    autoplay: false,
+    autoplay: true,
     items: 1,
     loop: true,
     dots: true,
@@ -136,7 +136,7 @@ jQuery(document).ready(function ($) {
   }
 
   // Contact form close button
-  $(document).on('click', '.close', function () {
+  $(document).on('click', '.contact_close', function () {
     $('.contact_alert').fadeOut(200);
     $('#contact_loader').delay(500).fadeOut('slow');
   });
@@ -150,11 +150,31 @@ jQuery(document).ready(function ($) {
     $(activeTab).fadeIn();
     $('.event_logo img').hide();
     var activeImg = activeTab.substring(1, activeTab.length);
-    console.log($("[data-img='" + activeImg + "']"));
     $("[data-img='" + activeImg + "']").css('display','block');
     return false;
   });
 
-  // AOS.init();
+  $('.location_expand').click(function(){
+    $('.location_box').css('display','flex');
+    $('.box_wrapper').fadeIn();
+  });
+
+  // Box carousel
+  $('.box_carousel').owlCarousel({
+    autoplay: false,
+    items: 1,
+    loop: true,
+    dots: false,
+    nav: true,
+    navText: ["<img src='img/prev.png' class='prev'>","<img src='img/next.png' class='next'>"], 
+    autoplayTimeout: 5000,
+    autoplaySpeed: 2000
+  });
+
+    // Locations box close button
+  $(document).on('click', '.lb_close', function () {
+    $('.box_wrapper').fadeOut(200);
+    $('.location_box').delay(300).fadeOut('slow');
+  });
 
 });
