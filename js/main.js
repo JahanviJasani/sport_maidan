@@ -154,21 +154,18 @@ jQuery(document).ready(function ($) {
     return false;
   });
 
-  $('.location_expand').click(function(){
-    $('.location_box').css('display','flex');
-    $('.box_wrapper').fadeIn();
-  });
-
   // Box carousel
   $('.box_carousel').owlCarousel({
-    autoplay: false,
     items: 1,
     loop: true,
     dots: false,
     nav: true,
-    navText: ["<img src='img/prev.png' class='prev'>","<img src='img/next.png' class='next'>"], 
-    autoplayTimeout: 5000,
-    autoplaySpeed: 2000
+    navText: ["<img src='img/prev.png' class='prev'>","<img src='img/next.png' class='next'>"]    
+  });
+
+  $('.location_expand').click(function(){
+    $('.location_box').css('display','flex');
+    $('.box_wrapper').fadeIn();
   });
 
     // Locations box close button

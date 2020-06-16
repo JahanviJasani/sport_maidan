@@ -699,7 +699,7 @@ body.mobile_nav_active #mobile_nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255,255,255,0.9);
+  background: rgba(0,0,0,0.5);
   display: none;
   align-items: center;
   justify-content: center;
@@ -708,7 +708,7 @@ body.mobile_nav_active #mobile_nav {
 
 #locations .location_box .box_wrapper {
   position: relative;
-  padding: 85px 65px;
+  padding: 90px 65px;
   background: #000;
   display: flex;
   width: 74%;
@@ -718,8 +718,12 @@ body.mobile_nav_active #mobile_nav {
 #locations .box_carousel {
   width: 313px;
   height: 243px;
-  padding: 0 44px;
-  /*overflow: hidden;*/
+  padding: 0 34px;
+  overflow: hidden;
+}
+
+#locations .box_carousel .slide {
+  padding: 0 10px;
 }
 
 #locations .box_carousel img {
@@ -738,6 +742,7 @@ body.mobile_nav_active #mobile_nav {
 }
 
 #locations .box_content {
+  position: relative;
   margin-left: 100px; 
 } 
 
@@ -766,9 +771,15 @@ body.mobile_nav_active #mobile_nav {
 #locations .box_text .address {
   font-size: 12px;
   font-weight: 800;
-  margin-top: 18px;
+  margin-top: 15px;
   letter-spacing: 0.9px;
   color: #ffcc00;
+}
+
+#locations .box_content .overlay_leaves {
+  position: absolute;
+  right: 115px;
+  bottom: -40px;
 }
 
 #locations .location_box .close {
