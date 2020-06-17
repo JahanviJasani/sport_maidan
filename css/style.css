@@ -1339,12 +1339,7 @@ body.mobile_nav_active #mobile_nav {
 .footer .footer_right .social_media_links li {
   display: inline-block;
   margin: 0 4px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .footer .footer_right .social_media_links li img {
