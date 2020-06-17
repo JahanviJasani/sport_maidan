@@ -620,7 +620,6 @@
 	}
 	#school_ex .school_ex_content {
 	  padding: 0 30px;
-	  /*padding: 92px 0;*/
 	  width: 50%;
 	}
 	#school_ex .school_ex_img {
@@ -629,6 +628,9 @@
 	#school_ex .school_ex_img img {
 		height: 100%;
 	}
+	/*.events_bg_wrapper {
+		padding-bottom: 65px;
+	}*/
 }
 
 @media only screen and (min-width: 1024px) {

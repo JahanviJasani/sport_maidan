@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 
+  var prevScrollTop;
+
 	$(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -166,12 +168,14 @@ jQuery(document).ready(function ($) {
   $('.location_expand').click(function(){
     $('.location_box').css('display','flex');
     $('.box_wrapper').fadeIn();
+    prevScrollTop = $(window).scrollTop();
   });
 
     // Locations box close button
   $(document).on('click', '.lb_close', function () {
     $('.box_wrapper').fadeOut(200);
     $('.location_box').delay(300).fadeOut('slow');
+    $(window).scrollTop(prevScrollTop);
   });
 
 });
