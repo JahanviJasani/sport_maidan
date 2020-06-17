@@ -101,6 +101,7 @@ button {
   outline: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  box-shadow: none;
 }
 
 button.close img {
