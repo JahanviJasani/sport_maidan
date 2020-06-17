@@ -669,6 +669,7 @@ body.mobile_nav_active #mobile_nav {
   letter-spacing: 2.7px;
   color: #ffcc00;
   margin-bottom: 7px;
+  transition: all 1s;
 }
 
 #locations .location_single .location_content .location_expand {
@@ -692,14 +693,14 @@ body.mobile_nav_active #mobile_nav {
   bottom: 0;
   max-width: 60px;
 }
-/*--------------------------------------------*/
+
 #locations .location_box {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
   display: none;
   align-items: center;
   justify-content: center;
@@ -708,17 +709,19 @@ body.mobile_nav_active #mobile_nav {
 
 #locations .location_box .box_wrapper {
   position: relative;
-  padding: 90px 65px;
+  padding: 20px 10px;
   background: #000;
   display: flex;
-  width: 74%;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 94%;
   margin: 0 auto;
 }
 
 #locations .box_carousel {
-  width: 313px;
+  width: 280px;
   height: 243px;
-  padding: 0 34px;
+  padding: 0 17.5px;
   overflow: hidden;
 }
 
@@ -743,24 +746,26 @@ body.mobile_nav_active #mobile_nav {
 
 #locations .box_content {
   position: relative;
-  margin-left: 100px; 
+  /*margin-left: 100px; */
+  margin-top: 30px;
+  padding: 0 10px;
 } 
 
 #locations .box_content .box_header {
   display: flex;
+  align-items: flex-end;
 }
 
 #locations .box_header .box_title {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 800;
-  line-height: 1.5;
   letter-spacing: 2.7px;
   color: #ffcc00;
-  margin-right: 19px;
+  margin-right: 10px;
 }
 
 #locations .box_text .description {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 200;
   line-height: 1.86;
   letter-spacing: 0.9px;
@@ -778,14 +783,19 @@ body.mobile_nav_active #mobile_nav {
 
 #locations .box_content .overlay_leaves {
   position: absolute;
-  right: 115px;
-  bottom: -40px;
+  right: 0;
+  bottom: -10px;
+  width: 40px;
 }
 
 #locations .location_box .close {
   position: absolute;
-  top: 22px;
-  right: 20px;
+  top: 12px;
+  right: 6px;
+}
+
+#locations .location_box .close img {
+  max-width: 25px;
 }
 
 /*--------------------------------------------------------------

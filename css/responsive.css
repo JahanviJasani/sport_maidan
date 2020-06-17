@@ -2,8 +2,43 @@
 	#membership .membership_img .img_content p {
 		letter-spacing: 1px;
 	}
+	#locations .box_carousel {
+		width: 313px;
+		padding: 0 34px;
+	}
+	#locations .box_content .overlay_leaves {
+		right: auto;
+		left: 266px;
+	}
 }
 @media only screen and (min-width: 412px) {
+	/*--------------------------------------------------------------
+	# Locations Section
+	--------------------------------------------------------------*/
+	#locations .location_box .box_wrapper {
+		padding: 60px 20px;
+	}
+	#locations .box_header .box_title {
+		font-size: 36px;
+		margin-right: 19px;
+	}
+	#locations .box_text .description {
+		font-size: 16px;
+	}
+	#locations .box_content .overlay_leaves {
+		width: 100%;
+		bottom: -40px;
+	}
+	#locations .location_box .close {
+		top: 22px;
+		right: 20px;
+	}
+	#locations .location_box .close img {
+		max-width: 35px;
+	}
+	/*--------------------------------------------------------------
+	# Events Section
+	--------------------------------------------------------------*/
 	#events .float_01 {
 		top: -60px;
   	left: -100px;
@@ -174,6 +209,15 @@
 	#locations  .location_single .location_bg {
 		max-width: 100%;
 		left: 224px;
+	}
+	#locations .location_box .box_wrapper {
+		padding: 90px 65px;
+	}
+	#locations .box_content {
+		margin-top: 50px;
+	}
+	#locations .location_box .close img {
+		max-width: 40px;
 	}
 	/*--------------------------------------------------------------
 	# Events Section
@@ -366,6 +410,18 @@
 	--------------------------------------------------------------*/
 	#locations {
 		padding: 186px 0 156px;
+	}
+	#locations .location_box .box_wrapper {
+		width: 90%;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+	#locations .box_content {
+		margin: 0 0 0 30px;
+		padding: 0;
+	}
+	#locations .box_content .overlay_leaves {
+		right: 115px;
 	}
 	/*--------------------------------------------------------------
 	# Events Section
@@ -576,6 +632,9 @@
 }
 
 @media only screen and (min-width: 1024px) {
+	#locations .box_text .description {
+		font-size: 18px;
+	}
 	.events_wrapper {
 	  padding-right: 50px;
 	  padding-left: 50px;
@@ -651,6 +710,9 @@
     margin-right: 95px;
     margin-top: 30px;
 	}
+	#locations .location_box .box_wrapper {
+		width: 74%;
+	}
 	/*--------------------------------------------------------------
 	# School Excursion Section
 	-------------------------------------------------------------- */
@@ -666,6 +728,9 @@
 @media only screen and (min-width: 1366px) {
 	.web_container {
 		padding: 0 90px;
+	}
+	#locations .box_content {
+		margin-left: 100px;
 	}
 	/*--------------------------------------------------------------
 	# Events Section
@@ -698,6 +763,9 @@
 @media only screen and (min-width: 1600px) {
 	.web_container {
 		padding: 0 150px;
+	}
+	#locations .location_box .box_wrapper {
+		width: 65%;
 	}
 	.events_wrapper {
 		padding-left: 100px;
