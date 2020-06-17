@@ -675,6 +675,7 @@ body.mobile_nav_active #mobile_nav {
 
 #locations .location_single .location_content .location_expand {
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #locations .locations_wrapper .location_single:hover .location_content h3 {
