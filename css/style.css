@@ -510,13 +510,13 @@ body.mobile_nav_active #mobile_nav {
   max-width: none;
 }
 
-#custom_dots {
+.custom_dots {
   position: relative;
   display: flex;
   margin-top: 23px;
 }
 
-#custom_dots .owl-dot {
+.custom_dots .owl-dot {
   width: 12px;
   height: 12px;
   margin: 0 4px;
@@ -525,7 +525,7 @@ body.mobile_nav_active #mobile_nav {
   cursor: pointer;
 }
 
-#custom_dots .owl-dot.active {
+.custom_dots .owl-dot.active {
   background: #000;
 }
 

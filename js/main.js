@@ -74,16 +74,20 @@ jQuery(document).ready(function ($) {
     autoplay: true,
     items: 1,
     loop: true,
-    dots: true,
-    dotsContainer: '#custom_dots',
+    dots: false,
+    // dotsContainer: '.custom_dots',
     nav: false,
     autoplayTimeout: 5000,
-    autoplaySpeed: 2000
+    autoplaySpeed: 1000
   }); 
 
   // Hero carousel indicators
   $('.owl-dot').click(function () {
-	  $('.hero_carousel').trigger('to.owl.carousel', [$(this).index(), 300]);
+    $('.hero_carousel').trigger('stop.owl.autoplay');
+	  $('.hero_carousel').trigger('to.owl.carousel', [$(this).index(), 1000]);    
+    setTimeout( function(){ 
+      $('.hero_carousel').trigger('play.owl.autoplay');
+    }  , 3000 );
 	});
 
   // Contact Form validation
@@ -168,7 +172,6 @@ jQuery(document).ready(function ($) {
   $('.location_expand').click(function(){
     $('.location_box').css('display','flex');
     $('.box_wrapper').fadeIn();
-    // prevScrollTop = $(window).scrollTop();
     window.oldScrollPos = $(window).scrollTop();
 
     $(window).on('scroll.scrolldisabler',function ( event ) {
@@ -177,7 +180,7 @@ jQuery(document).ready(function ($) {
     });
   });
 
-    // Locations box close button
+  // Locations box close button
   $(document).on('click', '.lb_close', function () {
     $('.box_wrapper').fadeOut(200);
     $('.location_box').delay(300).fadeOut('slow');
