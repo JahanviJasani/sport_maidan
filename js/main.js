@@ -168,14 +168,20 @@ jQuery(document).ready(function ($) {
   $('.location_expand').click(function(){
     $('.location_box').css('display','flex');
     $('.box_wrapper').fadeIn();
-    prevScrollTop = $(window).scrollTop();
+    // prevScrollTop = $(window).scrollTop();
+    window.oldScrollPos = $(window).scrollTop();
+
+    $(window).on('scroll.scrolldisabler',function ( event ) {
+       $(window).scrollTop( window.oldScrollPos );
+       event.preventDefault();
+    });
   });
 
     // Locations box close button
   $(document).on('click', '.lb_close', function () {
     $('.box_wrapper').fadeOut(200);
     $('.location_box').delay(300).fadeOut('slow');
-    $(window).scrollTop(prevScrollTop);
+    $(window).off('scroll.scrolldisabler');
   });
 
 });
