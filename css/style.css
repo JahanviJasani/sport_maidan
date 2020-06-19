@@ -1148,19 +1148,25 @@ body.mobile_nav_active #mobile_nav {
 .events_wrapper {
   position: relative;
   background: #fff;
-  padding: 0 10px 58px;
+  padding: 40px 10px;
 }
 
 .events_wrapper .events_nav {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .events_wrapper .nav_tab {
-  padding: 30px 10px 5px;
-  margin: 0 5px;
+  padding: 15px 10px;
+  flex: 0 1 48%;
+  margin: 0 2px 4px;
   text-align: center;
-  color: #7f7f7f; 
+  background: #000;
+}
+
+.events_wrapper .nav_tab.separator {
+  display: none;
 }
 
 .events_wrapper .nav_tab:nth-child(2) {
@@ -1178,7 +1184,7 @@ body.mobile_nav_active #mobile_nav {
   line-height: 1;
   letter-spacing: 0.28px;
   text-transform: uppercase;
-  color: #7f7f7f;
+  color: #fff;
 }
 
 .events_wrapper .nav_link:hover {

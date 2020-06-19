@@ -55,10 +55,6 @@
 	/*--------------------------------------------------------------
 	# Events Page
 	--------------------------------------------------------------*/
-	.events_wrapper .nav_tab {
-		padding: 42px 15px 5px;
-		margin:  0 10px;
-	}
 	.events_wrapper .events_header .events_title {
 		font-size: 66px;
 	}
@@ -285,8 +281,9 @@
 	/*--------------------------------------------------------------
 	# Events Page
 	--------------------------------------------------------------*/
-	.events_wrapper {
-		padding: 0 35px 57px;
+	.events_wrapper .nav_tab {
+		flex: auto;
+		padding: 20px;
 	}
 	.events_wrapper .events_img .overlay {
 	  padding: 42px 0;
@@ -552,8 +549,24 @@
 	/*--------------------------------------------------------------
 	# Events Page
 	--------------------------------------------------------------*/
+	.events_wrapper {
+		padding: 0 35px 57px;
+	}
 	.events_wrapper .events_nav {
 		justify-content: flex-end;
+	}
+	.events_wrapper .nav_tab {
+		padding: 42px 15px 5px;
+		margin:  0 10px;
+		color: #7f7f7f;
+		background: #fff;
+		flex: none; 
+	}
+	.events_wrapper .nav_tab .nav_link {
+		color: #7f7f7f;
+	}
+	.events_wrapper .nav_tab.separator {
+	  display: block;
 	}
 	.events_wrapper .events_inner {
 		flex-wrap: nowrap;
