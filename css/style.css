@@ -639,6 +639,7 @@ body.mobile_nav_active #mobile_nav {
 
 #locations .locations_wrapper .location_single.bg_gurgaon {
   background: url(../img/gurgaon_dark.png) no-repeat left;
+  cursor: pointer;
 }
 
 #locations .locations_wrapper .location_single.bg_gurgaon:hover {
@@ -668,11 +669,6 @@ body.mobile_nav_active #mobile_nav {
   color: #ffcc00;
   margin-bottom: 7px;
   transition: all 1s;
-}
-
-#locations .location_single .location_content .location_expand {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
 }
 
 #locations .locations_wrapper .location_single:hover .location_content h3 {

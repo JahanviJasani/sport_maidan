@@ -2,6 +2,7 @@ jQuery(document).ready(function ($) {
 
   var prevScrollTop;
 
+  // Sticky Header
 	$(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -75,7 +76,6 @@ jQuery(document).ready(function ($) {
     items: 1,
     loop: true,
     dots: false,
-    // dotsContainer: '.custom_dots',
     nav: false,
     autoplayTimeout: 5000,
     autoplaySpeed: 1000
@@ -169,7 +169,7 @@ jQuery(document).ready(function ($) {
     navText: ["<img src='img/prev.png' class='prev'>","<img src='img/next.png' class='next'>"]    
   });
 
-  $('.location_expand').click(function(){
+  $('.bg_gurgaon').click(function(){
     $('.location_box').css('display','flex');
     $('.box_wrapper').fadeIn();
     window.oldScrollPos = $(window).scrollTop();
