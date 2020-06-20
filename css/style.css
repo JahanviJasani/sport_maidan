@@ -1255,30 +1255,28 @@ body.mobile_nav_active #mobile_nav {
 
 .events_wrapper .events_content {
   position: relative;
-  padding: 20px 20px 100px 20px;
-  box-shadow: 3px 10px 30px rgba(74,74,77,.15);
+  padding: 20px 20px 100px;
+  box-shadow: 2px 5px 20px rgba(74,74,77,.15);
   margin-top: 80px;
-  text-align: center;
 }
 
 .events_wrapper .events_header .events_title {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: normal;
   line-height: 1;
-  letter-spacing: 4.08px;
   color: #000;
   text-transform: uppercase;
   display: flex;
   align-items: baseline;
-  justify-content: center;
 }
 
 .events_wrapper .events_header .events_title span {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 41px;
   letter-spacing: 0.56px;
   color: #080808;
+  margin-left: 7px;
 }
 
 .events_wrapper .events_text {
@@ -1290,15 +1288,15 @@ body.mobile_nav_active #mobile_nav {
   font-weight: 600;
   text-transform: uppercase;
   color: #ffcc00;
-  margin: 10px 0 15px;
+  margin: 5px 0 15px;
   display: inline-block;
 }
 
 .events_wrapper .events_content .events_desc {
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 1px;
   font-weight: 500;
   line-height: 1.27;
-  text-align: justify;
   color: #5c5c5c;
 }
 

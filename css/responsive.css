@@ -10,6 +10,19 @@
 		right: auto;
 		left: 266px;
 	}
+	/*--------------------------------------------------------------
+	# Events Page
+	--------------------------------------------------------------*/
+	.events_wrapper .events_header .events_title {
+		font-size: 52px;
+	}
+	.events_wrapper .events_header .events_title span {
+		font-size: 22px;
+	}
+	.events_wrapper .events_content .events_subtitle {
+		font-size: 20px;
+		letter-spacing: 1.1px;
+	}
 }
 @media only screen and (min-width: 412px) {
 	/*--------------------------------------------------------------
@@ -55,19 +68,12 @@
 	/*--------------------------------------------------------------
 	# Events Page
 	--------------------------------------------------------------*/
-	.events_wrapper .events_header .events_title {
-		font-size: 66px;
+	.events_wrapper {
+		padding-left: 25px;
+		padding-right: 25px;
 	}
-	.events_wrapper .events_header .events_title span {
-		font-size: 34px;
-	}
-	.events_wrapper .events_content .events_subtitle {
-		font-size: 22px;
-		letter-spacing: 1.8px;
-		margin: 15px 0;
-	}
-	.events_wrapper .events_content .events_desc {
-		font-size: 16px;
+	.events_wrapper .events_content {
+		padding: 25px 30px 100px;
 	}
 }
 
@@ -79,6 +85,21 @@
 		max-width: 100px;
 	}
 	#membership .membership_img .img_content p {
+		font-size: 16px;
+	}
+	.events_wrapper .events_header .events_title {
+		letter-spacing: 4.08px;
+    font-size: 58px;
+	}
+	.events_wrapper .events_header .events_title span {
+		font-size: 32px;
+	}
+	.events_wrapper .events_content .events_subtitle {
+		font-size: 25px;
+    letter-spacing: 2.4px;
+    margin: 15px 0;
+	}
+	.events_wrapper .events_content .events_desc {
 		font-size: 16px;
 	}
 }
@@ -281,6 +302,10 @@
 	/*--------------------------------------------------------------
 	# Events Page
 	--------------------------------------------------------------*/
+	.events_wrapper {
+		padding-left: 55px;
+		padding-right: 55px;
+	}
 	.events_wrapper .nav_tab {
 		flex: auto;
 		padding: 20px;
@@ -295,17 +320,7 @@
 		bottom: -10%;
 	}
 	.events_wrapper .events_content {
-		padding: 30px 40px 100px;
-	}
-	.events_wrapper .events_header .events_title {
-		font-size: 92px;
-	}
-	.events_wrapper .events_header .events_title span {
-		font-size: 44px;
-	}
-	.events_wrapper .events_content .events_subtitle {
-		font-size: 29px;
-		letter-spacing: 3.6px;
+		padding: 30px 60px 100px;
 	}
 }
 
@@ -366,6 +381,14 @@
 		bottom: 0;
   	left: 0;
 		margin-top: -28px;
+	}
+	.events_wrapper .events_content {
+		width: 100%;
+	}
+	.events_wrapper .events_content .events_desc {
+		width: 72%;
+		text-align: justify;
+		letter-spacing: -1px;
 	}
 }
 
@@ -576,6 +599,7 @@
 	  bottom: -30px;
 	}
 	.events_wrapper .events_content {
+		width: auto;
 		box-shadow: none;
 		margin: 0;
 		padding: 0;
@@ -588,14 +612,13 @@
 	}
 	.events_wrapper .events_header .events_title {
 		color: #fff;
-		justify-content: flex-start;
-		font-size: 112px;
+		font-size: 100px;
 		line-height: 86px;
   	letter-spacing: 6.08px;
 	}
 	.events_wrapper .events_header .events_title span {
-		font-size: 52px;
-		line-height: 41px;
+		font-size: 51px;
+		margin-left: 0;
 	}
 	.events_wrapper .events_text {
 		margin-top: 52%;
@@ -607,6 +630,8 @@
 	}
 	.events_wrapper .events_content .events_desc {
 		width: 295px;
+		letter-spacing: 0;
+		text-align: justify;
 	}
 }
 
@@ -711,6 +736,9 @@
 	/*--------------------------------------------------------------
 	# Events Page
 	--------------------------------------------------------------*/
+	.events_wrapper .events_header .events_title {
+		font-size: 112px;
+	}
 	.events_wrapper .event_logo {
 	  right: -20px;
 	  bottom: 0;
