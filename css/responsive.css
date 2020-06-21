@@ -19,6 +19,9 @@
 	.events_wrapper .events_header .events_title span {
 		font-size: 22px;
 	}
+	.events_wrapper .events_header .events_title .span_02 {
+		font-size: 18px;
+	}
 	.events_wrapper .events_content .events_subtitle {
 		font-size: 20px;
 		letter-spacing: 1.1px;
@@ -93,6 +96,9 @@
 	}
 	.events_wrapper .events_header .events_title span {
 		font-size: 32px;
+	}
+	.events_wrapper .events_header .events_title .span_02 {
+		font-size: 24px;
 	}
 	.events_wrapper .events_content .events_subtitle {
 		font-size: 25px;
@@ -375,6 +381,9 @@
 	/*--------------------------------------------------------------
 	# Events Page
 	--------------------------------------------------------------*/
+	.events_wrapper .events_content .events_subtitle.subtitle_02 {
+		font-size: 20px;
+	}
 	.events_wrapper .events_img .events_more_info {
 		position: relative;
 		transform: none;
@@ -393,8 +402,26 @@
 }
 
 @media only screen and (max-width: 991px) {
+	.events_bg_wrapper {
+		padding: 0;
+	}
+	.events_bg_wrapper:nth-child(1) {
+		padding-top: 100px;
+	}
 	.events_footer .footer_inner {
   	padding: 0;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.events_wrapper.wrapper_02 .events_header .events_title {
+		justify-content: center;
+	}
+	.events_wrapper.wrapper_02 .events_content {
+		text-align: center;
+	}
+	.events_wrapper.wrapper_02 .events_content .events_desc {
+		margin: 0 auto;
 	}
 }
 
@@ -573,17 +600,20 @@
 	# Events Page
 	--------------------------------------------------------------*/
 	.events_wrapper {
+		min-height: 585px;
 		padding: 0 35px 57px;
 	}
 	.events_wrapper .events_nav {
 		justify-content: flex-end;
+		align-items: flex-end;
 	}
 	.events_wrapper .nav_tab {
-		padding: 42px 15px 5px;
+		padding: 42px 10px 10px;
 		margin:  0 10px;
 		color: #7f7f7f;
 		background: #fff;
 		flex: none; 
+		max-width: 150px;
 	}
 	.events_wrapper .nav_tab .nav_link {
 		color: #7f7f7f;
@@ -593,6 +623,9 @@
 	}
 	.events_wrapper .events_inner {
 		flex-wrap: nowrap;
+	}
+	.events_wrapper.wrapper_02 .events_inner {
+	  margin-top: 25px;
 	}
 	.events_wrapper .event_logo {
 	  right: -12px;
@@ -620,6 +653,10 @@
 		font-size: 51px;
 		margin-left: 0;
 	}
+
+	.events_wrapper .events_header .events_title .span_02 {
+		font-size: 41px;
+	}
 	.events_wrapper .events_text {
 		margin-top: 52%;
 		margin-left: 10px;	
@@ -627,6 +664,9 @@
 	.events_wrapper .events_content .events_subtitle {
 		font-size: 22px;
 		letter-spacing: 1.8px;
+	}
+	.events_wrapper .events_content .events_subtitle.subtitle_02 {
+		font-size: 18.3px;
 	}
 	.events_wrapper .events_content .events_desc {
 		width: 295px;
@@ -736,6 +776,18 @@
 	/*--------------------------------------------------------------
 	# Events Page
 	--------------------------------------------------------------*/
+	.events_wrapper .events_header .events_title .span_02 {
+		font-size: 48px;
+	}
+	.events_wrapper .events_content .events_subtitle.subtitle_02 {
+		font-size: 22px;
+	}
+	.events_wrapper.wrapper_02 .events_text {
+		margin-top: 45%;
+	}
+	.events_wrapper.wrapper_02 .events_content .events_desc {
+		width: 345px;
+	}
 	.events_wrapper .events_header .events_title {
 		font-size: 112px;
 	}
@@ -795,8 +847,8 @@
 		padding: 0 80px 80px;
 	}
 	.events_wrapper .nav_tab {
-		padding: 52px 20px 10px;
-		margin: 0 13px;
+		padding-top: 52px;
+		max-width: 180px;
 	}
 	.events_wrapper .nav_tab .nav_link {
 		font-size: 16px;
@@ -817,5 +869,14 @@
 	.events_wrapper .events_inner {
 		justify-content: center;
 		padding-bottom: 40px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (min-height: 769px) {
+	.events_bg_wrapper {
+		padding-bottom: 100px 0 50px;
+	}
+	.events_wrapper {
+		height: 650px;
 	}
 }
