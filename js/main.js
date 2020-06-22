@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
 
   // Sticky Header
 	$(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 50) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
     } else {
