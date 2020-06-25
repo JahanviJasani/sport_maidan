@@ -124,6 +124,21 @@ button {
   flex-wrap: wrap;
 }
 
+/* Back to top button */
+.back-to-top, .whatsapp {
+  position: fixed;
+  display: none;
+  width: 28px;
+  right: 20px;
+  bottom: 20px;
+  transition: background 0.5s;
+  z-index: 998;
+}
+
+.whatsapp {
+  right: 55px;
+}
+
 /* Prelaoder */
 #preloader, #contact_loader {
   position: fixed;

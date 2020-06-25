@@ -6,11 +6,22 @@ jQuery(document).ready(function ($) {
 	$(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
       $('.back-to-top').fadeIn('slow');
+      $('.whatsapp').fadeIn('slow');
       $('#header').addClass('header-fixed');
     } else {
       $('.back-to-top').fadeOut('slow');
       $('#header').removeClass('header-fixed');
     }
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $('.whatsapp').fadeOut();
+    }
+  });
+
+  $('.back-to-top').click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
   });
 
   // Mobile navigation
