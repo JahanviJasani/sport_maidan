@@ -430,7 +430,7 @@
 		position: relative;
 	}
 	.footer .footer_right .social_media_links li.fixed_icon {
-		visibility: hidden;
+		display: none;
 	}
 }
 
@@ -455,6 +455,8 @@
 	}
 	.back-to-top {
 		bottom: 27px;
+		right: 50%;
+		transform: translateX(50%;);
 	}
 	.whatsapp {
 		display: none !important;
