@@ -1,7 +1,12 @@
 jQuery(document).ready(function ($) {
 
   var prevScrollTop;
-  console.log($('.footer').position().top);
+  $(window).on('load', function () {
+    if ($("#preloader").length > 0) {
+      $("#preloader").fadeOut('slow');
+    }
+  });
+  // $('#preloader').delay(1000).fadeOut('slow');
 
   // Sticky Header
 	$(window).scroll(function () {
