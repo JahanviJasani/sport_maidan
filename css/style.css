@@ -1208,6 +1208,8 @@ body.mobile_nav_active #mobile_nav {
 
 .events_wrapper .events_img {
   position: relative;
+  order: 1;
+  margin-bottom: 30px;
 }
 
 .events_wrapper .events_img .overlay {
@@ -1251,7 +1253,7 @@ body.mobile_nav_active #mobile_nav {
   position: relative;
   padding: 20px 20px 100px;
   box-shadow: 2px 5px 20px rgba(74,74,77,.15);
-  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .events_wrapper.wrapper_02 .events_content {

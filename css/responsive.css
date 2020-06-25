@@ -422,6 +422,9 @@
 	.events_footer .footer_inner {
   	padding: 0;
 	}
+	#sm_corporate .events_wrapper .events_img {
+		margin-bottom: 0;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -639,6 +642,10 @@
 	.events_wrapper.wrapper_02 .events_inner {
 	  margin-top: 25px;
 	}
+	.events_wrapper .events_img {
+		order: 0;
+		margin: 0;
+	}
 	.events_wrapper .event_logo {
 	  right: -12px;
 	  bottom: -50px;
@@ -689,6 +696,7 @@
 		letter-spacing: 0;
 		text-align: justify;
 	}
+	
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1100px) {
