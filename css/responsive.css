@@ -25,7 +25,7 @@
 	.events_wrapper .events_header .events_title .span_03 {
 		font-size: 18px;
 	}
-	.events_wrapper .events_content .events_subtitle {
+	.events_wrapper .events_body .events_subtitle {
 		font-size: 20px;
 		letter-spacing: 1.1px;
 	}
@@ -78,7 +78,7 @@
 		padding-left: 25px;
 		padding-right: 25px;
 	}
-	.events_wrapper .events_content {
+	.events_wrapper .events_content .events_text {
 		padding: 25px 30px 100px;
 	}
 }
@@ -106,14 +106,15 @@
 	.events_wrapper .events_header .events_title .span_03 {
 		font-size: 24px;
 	}
-	.events_wrapper .events_content .events_subtitle {
+	.events_wrapper .events_body .events_subtitle {
 		font-size: 25px;
     letter-spacing: 2.4px;
 	}
-	.events_wrapper .events_content .events_desc {
+	.events_wrapper .events_body .events_desc {
 		font-size: 16px;
 	}
 }
+
 @media only screen and (min-width: 600px) {
 	.cta {
 		letter-spacing: 5px;
@@ -329,8 +330,11 @@
 	.events_wrapper .events_img .events_more_info {
 		bottom: -10%;
 	}
-	.events_wrapper .events_content {
+	.events_wrapper .events_content .events_text {
 		padding: 30px 60px 100px;
+	}
+	.events_wrapper.wrapper_02 .events_content .events_text {
+		padding-bottom: 50px;
 	}
 }
 
@@ -385,11 +389,11 @@
 	/*--------------------------------------------------------------
 	# Events Page
 	--------------------------------------------------------------*/
-	.events_wrapper .events_content .events_subtitle.subtitle_02 {
-		font-size: 20px;
-	}
 	.events_wrapper .events_header .events_title .span_02 {
 		font-size: 21px;
+	}
+	.events_wrapper .events_body .events_subtitle.subtitle_02 {
+		font-size: 20px;
 	}
 	.events_wrapper .events_img .events_more_info {
 		position: relative;
@@ -398,10 +402,7 @@
   	left: 0;
 		margin-top: -28px;
 	}
-	.events_wrapper .events_content {
-		width: 100%;
-	}
-	.events_wrapper .events_content .events_desc {
+	.events_wrapper .events_body .events_desc {
 		width: 72%;
 		text-align: justify;
 		letter-spacing: -1px;
@@ -424,6 +425,9 @@
 	}
 	#sm_corporate .events_wrapper .events_img {
 		margin-bottom: 0;
+	}
+	.events_wrapper .events_content {
+		position: relative;
 	}
 }
 
@@ -651,15 +655,15 @@
 	  bottom: -50px;
 	}
 	.events_wrapper .events_content {
-		width: auto;
 		box-shadow: none;
 		margin: 0;
-		padding: 0;
-		text-align: left;
 	}
-	.events_wrapper .events_content .events_header {
+	.events_wrapper .events_content .events_text {
+		padding: 0;
+	}
+	.events_wrapper .events_header {
 		position: absolute;
-	  top: 72px;
+	  top: -95px;
 	  right: 0;
 	}
 	.events_wrapper .events_header .events_title {
@@ -679,19 +683,19 @@
 	.events_wrapper .events_header .events_title .span_03 {
 		font-size: 41px;
 	}
-	.events_wrapper .events_text {
+	.events_wrapper .events_body {
 		margin-top: 52%;
 		margin-left: 10px;	
 	}
-	.events_wrapper .events_content .events_subtitle {
+	.events_wrapper .events_body .events_subtitle {
 		font-size: 22px;
 		letter-spacing: 1.8px;
 		margin: 15px 0;
 	}
-	.events_wrapper .events_content .events_subtitle.subtitle_02 {
+	.events_wrapper .events_body .events_subtitle.subtitle_02 {
 		font-size: 18px;
 	}
-	.events_wrapper .events_content .events_desc {
+	.events_wrapper .events_body .events_desc {
 		width: 295px;
 		letter-spacing: 0;
 		text-align: justify;
@@ -730,9 +734,6 @@
 	#school_ex .school_ex_img img {
 		height: 100%;
 	}
-	/*.events_bg_wrapper {
-		padding-bottom: 65px;
-	}*/
 }
 
 @media only screen and (min-width: 1024px) {
@@ -800,20 +801,23 @@
 	/*--------------------------------------------------------------
 	# Events Page
 	--------------------------------------------------------------*/
-	.events_wrapper .events_header .events_title .span_03 {
-		font-size: 48px;
-	}
-	.events_wrapper .events_content .events_subtitle.subtitle_02 {
-		font-size: 22px;
-	}
-	.events_wrapper.wrapper_02 .events_text {
-		margin-top: 45%;
-	}
-	.events_wrapper.wrapper_02 .events_content .events_desc {
-		width: 345px;
+	.events_wrapper .events_header {
+		top: -88px;
 	}
 	.events_wrapper .events_header .events_title {
 		font-size: 112px;
+	}
+	.events_wrapper .events_header .events_title .span_03 {
+		font-size: 48px;
+	}
+	.events_wrapper .events_body .events_subtitle.subtitle_02 {
+		font-size: 22px;
+	}
+	.events_wrapper.wrapper_02 .events_body {
+		margin-top: 45%;
+	}
+	.events_wrapper.wrapper_02 .events_body .events_desc {
+		width: 345px;
 	}
 	.events_wrapper .event_logo {
 	  right: -20px;

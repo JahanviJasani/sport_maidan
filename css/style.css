@@ -1250,13 +1250,16 @@ body.mobile_nav_active #mobile_nav {
 }
 
 .events_wrapper .events_content {
-  position: relative;
-  padding: 20px 20px 100px;
   box-shadow: 2px 5px 20px rgba(74,74,77,.15);
   margin-bottom: 50px;
 }
 
-.events_wrapper.wrapper_02 .events_content {
+.events_wrapper .events_content .events_text {
+  position: relative;
+  padding: 20px 20px 100px;
+}
+
+.events_wrapper.wrapper_02 .events_content .events_text {
   padding-bottom: 40px;
 }
 
@@ -1289,11 +1292,7 @@ body.mobile_nav_active #mobile_nav {
   font-size: 13px;
 }
 
-.events_wrapper .events_text {
-  overflow: hidden;
-}
-
-.events_wrapper .events_content .events_subtitle {
+.events_wrapper .events_body .events_subtitle {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1302,7 +1301,7 @@ body.mobile_nav_active #mobile_nav {
   display: inline-block;
 }
 
-.events_wrapper .events_content .events_desc {
+.events_wrapper .events_body .events_desc {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 500;
