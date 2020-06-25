@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
 
   var prevScrollTop;
+  console.log($('.footer').position().top);
 
   // Sticky Header
 	$(window).scroll(function () {
@@ -10,10 +11,8 @@ jQuery(document).ready(function ($) {
       $('#header').addClass('header-fixed');
     } else {
       $('.back-to-top').fadeOut('slow');
+      $('.whatsapp').fadeOut('slow');
       $('#header').removeClass('header-fixed');
-    }
-    if($(window).scrollTop() + $(window).height() == $(document).height()) {
-      $('.whatsapp').fadeOut();
     }
   });
 
