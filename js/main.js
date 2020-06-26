@@ -6,7 +6,6 @@ jQuery(document).ready(function ($) {
       $("#preloader").fadeOut('slow');
     }
   });
-  // $('#preloader').delay(1000).fadeOut('slow');
 
   // Sticky Header
 	$(window).scroll(function () {
@@ -41,7 +40,6 @@ jQuery(document).ready(function ($) {
     $('body').append('<div id="mobile_body_overly"></div>');
 
     $(document).on('click', '.mobile_nav_toggle', function (e) {
-      console.log("Hie");
       $('body').toggleClass('mobile_nav_active');
       $('.mobile_nav_toggle').toggleClass('toggle_active');
       $('#mobile_body_overly').toggle();
