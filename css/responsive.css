@@ -420,9 +420,6 @@
 	.events_bg_wrapper:nth-child(1) {
 		padding-top: 100px;
 	}
-	.events_footer .footer_inner {
-  	padding: 0;
-	}
 	#sm_corporate .events_wrapper .events_img {
 		margin-bottom: 0;
 	}
@@ -615,15 +612,6 @@
 	}
 	.footer .footer_right {
 		padding: 27px 0;
-	}
-	.events_footer .footer_left {
-		padding-left: 35px;
-		flex-grow: 1;
-		text-align: left;
-	}
-	.events_footer .footer_right {
-		padding-left: 12px;
-		padding-right: 12px;
 	}
 	/*--------------------------------------------------------------
 	# Events Page

@@ -1376,27 +1376,13 @@ body.mobile_nav_active #mobile_nav {
   padding: 25px 0;
 }
 
-.events_footer .footer_left {
-  background: #000;
-}
-
 .footer .footer_left .copyright {
   font-size: 14px;
   font-weight: 500;
 }
 
-.events_footer .footer_left .copyright {
-  color: #fff;
-}
-
 .footer .footer_right {
   padding-bottom: 20px;
-}
-
-.events_footer .footer_right {
-  position: relative;
-  background: #ffcc00;
-  padding: 20px 0;
 }
 
 .footer .footer_right .social_media_links li {
