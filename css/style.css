@@ -283,8 +283,9 @@ svg polygon {
 
 #header.header-fixed {
   padding: 20px 0;
-  background: rgba(255,255,255,0.8);
+  background: #fff;
   transition: all 0.5s;
+  box-shadow: 5px 10px 30px rgba(74,74,77,.15);
 }
 
 /*--------------------------------------------------------------
