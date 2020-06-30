@@ -2,6 +2,7 @@ jQuery(document).ready(function ($) {
 
   var prevScrollTop;
   $('#preloader').delay(500).fadeOut('slow');
+  $('form')[0].reset();
 
   // Sticky Header
 	$(window).scroll(function () {
@@ -184,7 +185,7 @@ jQuery(document).ready(function ($) {
       form.addClass('was-validated');
     }
     else{
-      $('#contact_loader').css('display','flex');
+      $('#contact_loader').css('display','flex'); 
       var jqxhr = $.post( "http://corporateolympics.sportsmaidan.com/api/sports/send_mail/",{ name: form[0][0].value, email: form[0][1].value, phoneno: form[0][2].value, message:  form[0][3].value} )
       .done(function() {
         $('#contact_loader .loader').css('display','none');
