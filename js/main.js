@@ -1,11 +1,7 @@
 jQuery(document).ready(function ($) {
 
   var prevScrollTop;
-  $(window).on('load', function () {
-    if ($("#preloader").length > 0) {
-      $("#preloader").fadeOut('slow');
-    }
-  });
+  $('#preloader').delay(500).fadeOut('slow');
 
   // Sticky Header
 	$(window).scroll(function () {
@@ -113,57 +109,6 @@ jQuery(document).ready(function ($) {
     }  , 3000 );
 	});
 
-  // Contact Form validation
-  $('#contactForm').submit(function(event){
-    var form = $(this);
-    if(form[0].checkValidity() === false){    
-      if(form[0][1].checkValidity() === false) {
-        feedbackText($('.invalid-email'), form[0][1].value, "email id");
-        $(form[0][1]).blur(function(){
-            feedbackText($('.invalid-email'), form[0][1].value, "email id");
-        });
-      }
-      if(form[0][2].checkValidity() === false) {
-        feedbackText($('.invalid-phone'), form[0][2].value, "phone no.");
-        $(form[0][2]).blur(function(){
-            feedbackText($('.invalid-phone'), form[0][2].value, "phone no.");
-        });
-      }
-      form.addClass('was-validated');
-    }
-    else{
-      $('#contact_loader').css('display','flex');
-      $("#contact_success").css('display','flex')
-      var jqxhr = $.post( "http://corporateolympics.sportsmaidan.com/api/sports/send_mail/",{ name: form[0][0].value, email: form[0][1].value, phoneno: form[0][2].value, message:  form[0][3].value} )
-      .done(function() {
-        $('#contact_loader .loader').css('display','none');
-        $("#contact_error").css('display','none');
-        $("#contact_success").css('display','flex')
-      })
-      .fail(function() {
-        $('#contact_loader .loader').css('display','none');
-        $("#contact_success").css('display','none');
-        $("#contact_error").css('display','flex');
-      })
-      .always(function() {
-        form[0].reset();
-      });
-      jqxhr.always(function() {
-      });
-    }
-    event.preventDefault();
-  });
-
-  function feedbackText (element, value, text) {
-    console.log(element);
-    if(value == '') {
-      element.html('Please enter your '+text);
-    }
-    else {
-      element.html('Please enter a valid '+text); 
-    }
-  }
-
   // Contact form close button
   $(document).on('click', '.contact_close', function () {
     $('.contact_alert').fadeOut(200);
@@ -208,5 +153,66 @@ jQuery(document).ready(function ($) {
     $('.location_box').delay(300).fadeOut('slow');
     $(window).off('scroll.scrolldisabler');
   });
+
+  // Corporate Logo carousel
+  $('.corporate_logo_carousel').owlCarousel({
+    autoplay: true,
+    items: 1,
+    loop: true,
+    dots: false,
+    nav: false,
+    autoplayTimeout: 2000,
+    autoplaySpeed: 2000
+  }); 
+
+  // Contact Form validation
+  $('#contactForm').submit(function(event){
+    var form = $(this);
+    if(form[0].checkValidity() === false){    
+      if(form[0][1].checkValidity() === false) {
+        feedbackText($('.invalid-email'), form[0][1].value, "email id");
+        $(form[0][1]).blur(function(){
+            feedbackText($('.invalid-email'), form[0][1].value, "email id");
+        });
+      }
+      if(form[0][2].checkValidity() === false) {
+        feedbackText($('.invalid-phone'), form[0][2].value, "phone no.");
+        $(form[0][2]).blur(function(){
+            feedbackText($('.invalid-phone'), form[0][2].value, "phone no.");
+        });
+      }
+      form.addClass('was-validated');
+    }
+    else{
+      $('#contact_loader').css('display','flex');
+      var jqxhr = $.post( "http://corporateolympics.sportsmaidan.com/api/sports/send_mail/",{ name: form[0][0].value, email: form[0][1].value, phoneno: form[0][2].value, message:  form[0][3].value} )
+      .done(function() {
+        $('#contact_loader .loader').css('display','none');
+        $("#contact_error").css('display','none');
+        $("#contact_success").css('display','flex')
+      })
+      .fail(function() {
+        $('#contact_loader .loader').css('display','none');
+        $("#contact_success").css('display','none');
+        $("#contact_error").css('display','flex');
+      })
+      .always(function() {
+        form[0].reset();
+      });
+      jqxhr.always(function() {
+      });
+    }
+    event.preventDefault();
+  });
+
+  function feedbackText (element, value, text) {
+    console.log(element);
+    if(value == '') {
+      element.html('Please enter your '+text);
+    }
+    else {
+      element.html('Please enter a valid '+text); 
+    }
+  }
 
 });

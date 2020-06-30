@@ -271,10 +271,6 @@ svg polygon {
   z-index: 997;
 }
 
-#header .logo img {
-  max-height: 42px;
-}
-
 #header .header_container {
   display: flex;
   align-items: center;
@@ -1359,6 +1355,74 @@ body.mobile_nav_active #mobile_nav {
   font-weight: 500;
   line-height: 1.27;
   color: #5c5c5c;
+}
+
+.corporate_logo_carousel {
+  width: 140px;
+  height: 80px;
+}
+
+.corporate_logo_carousel .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.events_wrapper .event_logo .corporate_logo_carousel img {
+  width: auto;
+  max-width: 140px;
+  max-height: 80px;
+}
+
+/*--------------------------------------------------------------
+# CTA Section
+--------------------------------------------------------------*/
+.call_to_action {
+  margin-bottom: 30px;
+}
+
+.call_to_action .cta_wrapper {
+  position: relative;
+  padding: 60px 0;
+  background: url(../img/cta_bg.png) center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.call_to_action .cta_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.call_to_action .cta_inner .cta_title {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: 3.8px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.call_to_action .cta_inner .cta_desc {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.call_to_action .cta_inner .cta {
+  border: 2px solid #000;
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call_to_action .cta_inner .cta img {
+  margin-left: 12px;
 }
 
 /*--------------------------------------------------------------

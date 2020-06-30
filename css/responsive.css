@@ -113,6 +113,14 @@
 	.events_wrapper .events_body .events_desc {
 		font-size: 16px;
 	}
+	.call_to_action .cta_inner .cta_title {
+		font-size: 57px;
+		margin-bottom: 10px;
+	}
+	.call_to_action .cta_inner .cta_desc {
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
 }
 
 @media only screen and (min-width: 600px) {
@@ -698,6 +706,9 @@
 		width: 295px;
 		letter-spacing: 0;
 		text-align: justify;
+	}
+	.call_to_action {
+		margin: 100px 0 120px;
 	}
 }
 
