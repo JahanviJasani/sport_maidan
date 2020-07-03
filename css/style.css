@@ -438,7 +438,7 @@ body.mobile_nav_active #mobile_nav {
 #hero {
   width: 100%;
   padding: 120px 0 60px;
-  background: url(../img/hero_bg.png) center;
+  background: url(../img/hero_bg.jpg) center;
   background-size: cover;
   position: relative;
 }
@@ -665,7 +665,7 @@ body.mobile_nav_active #mobile_nav {
 --------------------------------------------------------------*/
 #locations {
   padding: 120px 0 60px;
-  background: url(../img/location_bg.png) center;
+  background: url(../img/location_bg.jpg) center;
   background-size: cover;
 }
 
@@ -845,7 +845,7 @@ body.mobile_nav_active #mobile_nav {
 -------------------------------------------------------------- */
 #events {
   position: relative;
-  background: url(../img/events_bg.png);
+  background: url(../img/events_bg.jpg);
   background-position: -120px -120px;
   padding: 120px 0 40px;
   overflow: hidden;
@@ -919,7 +919,7 @@ body.mobile_nav_active #mobile_nav {
 --------------------------------------------------------------*/
 #membership {
   padding: 100px 0 0;
-  background: url(../img/section_bg.png) center;
+  background: url(../img/section_bg.jpg) center;
   background-size: cover;
 }
 
@@ -978,7 +978,7 @@ body.mobile_nav_active #mobile_nav {
 --------------------------------------------------------------*/
 #school_ex {
   position: relative;
-  background: url(../img/section_bg.png) center;
+  background: url(../img/section_bg.jpg) center;
   background-size: cover;
   padding: 90px 0 0;
 }
@@ -1064,7 +1064,7 @@ body.mobile_nav_active #mobile_nav {
 # Contact Section
 --------------------------------------------------------------*/
 #contact {
-  background: url('../img/contact_bg.png') left;
+  background: url('../img/contact_bg.jpg') left;
   background-size: cover;
   padding: 100px 0 60px;
 }
@@ -1380,7 +1380,7 @@ body.mobile_nav_active #mobile_nav {
 .call_to_action .cta_wrapper {
   position: relative;
   padding: 60px 0;
-  background: url(../img/cta_bg.png) center no-repeat;
+  background: url(../img/cta_bg.jpg) center no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -1915,7 +1915,7 @@ body.mobile_nav_active #mobile_nav {
   .back-to-top {
     bottom: 27px;
     right: 50%;
-    transform: translateX(50%;);
+    transform: translateX(50%);
   }
   .whatsapp {
     display: none !important;
