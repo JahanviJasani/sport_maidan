@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
 
   var prevScrollTop;
   $('#preloader').delay(500).fadeOut('slow');
-  $('form')[0].reset();
+  // $('#contact_form')[0].reset();
 
   // Sticky Header
 	$(window).scroll(function () {
@@ -163,7 +163,8 @@ jQuery(document).ready(function ($) {
     dots: false,
     nav: false,
     autoplayTimeout: 2000,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
+    lazyload: true,
   }); 
 
   // Contact Form validation

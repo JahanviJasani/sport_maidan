@@ -1358,20 +1358,17 @@ body.mobile_nav_active #mobile_nav {
 }
 
 .corporate_logo_carousel {
-  width: 140px;
+  width: 180px;
   height: 80px;
 }
 
-.corporate_logo_carousel .slide {
+.corporate_logo_carousel .logo_slide {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.events_wrapper .event_logo .corporate_logo_carousel img {
+.corporate_logo_carousel .logo_slide img {
   width: auto;
-  max-width: 140px;
-  max-height: 80px;
 }
 
 /*--------------------------------------------------------------
