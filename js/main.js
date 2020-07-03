@@ -134,7 +134,7 @@ jQuery(document).ready(function ($) {
     loop: true,
     dots: false,
     nav: true,
-    navText: ["<img src='img/prev.png' class='prev'>","<img src='img/next.png' class='next'>"]    
+    navText: ["<img src='img/prev.png' class='prev' height='20' width='17'>","<img src='img/next.png' class='next' height='20' width='17'>"]    
   });
 
   $('.bg_gurgaon').click(function(){
