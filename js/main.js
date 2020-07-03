@@ -1,8 +1,7 @@
 jQuery(document).ready(function ($) {
 
+  $('#preloader').delay(2000).fadeOut('slow');
   var prevScrollTop;
-  $('#preloader').delay(500).fadeOut('slow');
-  // $('#contact_form')[0].reset();
 
   // Sticky Header
 	$(window).scroll(function () {
