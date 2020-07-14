@@ -184,7 +184,8 @@ jQuery(document).ready(function ($) {
       }
       form.addClass('was-validated');
     }
-    else{
+    else {
+      form.removeClass('was-validated');
       $('#contact_loader').css('display','flex'); 
       var jqxhr = $.post( "http://corporateolympics.sportsmaidan.com/api/sports/send_mail/",{ name: form[0][0].value, email: form[0][1].value, phoneno: form[0][2].value, message:  form[0][3].value} )
       .done(function() {
@@ -206,7 +207,6 @@ jQuery(document).ready(function ($) {
   });
 
   function feedbackText (element, value, text) {
-    console.log(element);
     if(value == '') {
       element.html('Please enter your '+text);
     }
