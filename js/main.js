@@ -96,6 +96,7 @@ jQuery(document).ready(function ($) {
     loop: true,
     dots: false,
     nav: false,
+    lazyLoad: true,
     autoplayTimeout: 5000,
     autoplaySpeed: 1000
   }); 
@@ -133,7 +134,8 @@ jQuery(document).ready(function ($) {
     loop: true,
     dots: false,
     nav: true,
-    navText: ["<img src='img/prev.png' class='prev' height='20' width='17'>","<img src='img/next.png' class='next' height='20' width='17'>"]    
+    navText: ["<img src='img/prev.png' class='prev' height='20' width='17'>","<img src='img/next.png' class='next' height='20' width='17'>"],
+    lazyLoad: true    
   });
 
   $('.bg_gurgaon').click(function(){
@@ -161,9 +163,9 @@ jQuery(document).ready(function ($) {
     loop: true,
     dots: false,
     nav: false,
+    lazyLoad: true,
     autoplayTimeout: 2000,
-    autoplaySpeed: 2000,
-    lazyload: true,
+    autoplaySpeed: 2000
   }); 
 
   // Contact Form validation
