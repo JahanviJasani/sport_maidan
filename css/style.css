@@ -1445,12 +1445,14 @@ body.mobile_nav_active #mobile_nav {
 
 .privacy_hero .hero_title {
   font-size: 32px;
+  line-height: 1.2;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .privacy_hero p {
   color: #222;
+  line-height: 1.4;
   font-size: 14px;
   font-weight: 500;
 }
@@ -1471,6 +1473,11 @@ body.mobile_nav_active #mobile_nav {
 .privacy_content li {
   margin-bottom: 15px;
   padding-left: 10px;
+  line-height: 24px;
+}
+
+.privacy_content .p_list li {
+  margin-bottom: 10px;
 }
 
 .privacy_content li a:hover {
@@ -1498,7 +1505,6 @@ body.mobile_nav_active #mobile_nav {
 
 .privacy_content .list {
   list-style: disc;
-  line-height: 24px;
 }
 
 strong {
@@ -1507,6 +1513,14 @@ strong {
 
 .privacy_content p strong {
   color: #ffcc00;
+}
+
+.privacy_content .address {
+  margin-bottom: 5px;
+}
+
+.privacy_content .address strong {
+  color: #333;  
 }
 
 /*--------------------------------------------------------------
@@ -1528,6 +1542,22 @@ strong {
 .footer .footer_left .copyright {
   font-size: 14px;
   font-weight: 500;
+}
+
+.footer .footer_left .copyright .privacy {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer .footer_left .copyright .privacy .p_separator {
+  display: none;
+}
+
+.footer .footer_left .copyright .privacy a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 .footer .footer_right {
@@ -2166,6 +2196,13 @@ strong {
   }
   .footer .footer_right {
     padding: 27px 0;
+  }
+  .footer .footer_left .copyright .privacy {
+    display: inline-flex;
+  }
+  .footer .footer_left .copyright .privacy .p_separator {
+    margin: 0 8px 0 5px;
+    display: inherit;
   }
   /*--------------------------------------------------------------
   # Events Page
