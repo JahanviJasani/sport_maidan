@@ -265,7 +265,7 @@ svg polygon {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
+.main-header, .privacy-header {
   padding: 25px 0;
   position: fixed;
   left: 0;
@@ -275,7 +275,13 @@ svg polygon {
   z-index: 997;
 }
 
-#header .header_container {
+.privacy-header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 5px 10px 30px rgba(74,74,77,.15);
+}
+
+.main-header .header_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -793,7 +799,6 @@ body.mobile_nav_active #mobile_nav {
 
 #locations .box_content {
   position: relative;
-  /*margin-left: 100px; */
   margin-top: 30px;
   padding: 0 10px;
 } 
@@ -1413,6 +1418,15 @@ body.mobile_nav_active #mobile_nav {
 }
 
 /*--------------------------------------------------------------
+# Privacy
+--------------------------------------------------------------*/
+.privacy-hero {
+  height: 250px;
+  background: url(../img/location_bg.jpg) center;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
@@ -1442,6 +1456,10 @@ body.mobile_nav_active #mobile_nav {
   margin: 0 4px;
   -webkit-tap-highlight-color: transparent;
 }
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
 
 @media only screen and (min-width: 360px) {
   #membership .membership_img .img_content p {
@@ -1795,7 +1813,7 @@ body.mobile_nav_active #mobile_nav {
   .web_container {
     padding: 0 30px;
   }
-  #header {
+  .main-header {
     padding: 30px 0;
   }
   /*--------------------------------------------------------------
