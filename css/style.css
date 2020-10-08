@@ -1,48 +1,48 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url('../lib/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-       url('../lib/fonts/Montserrat-ExtraBold.woff') format('woff');
+  src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+       url('../fonts/Montserrat-ExtraBold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url('../lib/fonts/Montserrat-SemiBold.woff2') format('woff2'),
-       url('../lib/fonts/Montserrat-SemiBold.woff') format('woff');
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+       url('../fonts/Montserrat-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../lib/fonts/Montserrat-Medium.woff2") format("woff2"),
-       url("../lib/fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+       url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../lib/fonts/Montserrat-Regular.woff2") format("woff2"),
-       url("../lib/fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+       url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../lib/fonts/Montserrat-Light.woff2") format("woff2"),
-       url("../lib/fonts/Montserrat-Light.woff2") format("woff");
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"),
+       url("../fonts/Montserrat-Light.woff2") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Athene";
-  src: url('../lib/fonts/Athene.woff2') format('woff2'),
-       url('../lib/fonts/Athene.woff') format('woff');
+  src: url('../fonts/Athene.woff2') format('woff2'),
+       url('../fonts/Athene.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -66,6 +66,7 @@ a {
   text-decoration: none;
   font-size: 15px;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -277,8 +278,6 @@ svg polygon {
 
 .privacy-header {
   position: relative;
-  border-bottom: 1px solid #ececec;
-  box-shadow: 5px 10px 30px rgba(74,74,77,.15);
 }
 
 .main_header .header_container {
@@ -1513,6 +1512,7 @@ strong {
 
 .privacy_content p strong {
   color: #ffcc00;
+  letter-spacing: 1px;
 }
 
 .privacy_content .address {
