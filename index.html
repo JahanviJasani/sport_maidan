@@ -11,7 +11,8 @@
 	</script>
 	
   <meta charset="utf-8">
-  <title>Sports Maidan</title>
+  <title>Sports Club/Complex, Badminton & Football Academy in Gurgaon, Sports Maidan</title>
+  <meta name="description" content="Looking for a sports club in Gurgaon and Manesar? Sports Maidan may become your ultimate destination. Sports Maidan is a perfect place for family and corporate sports' event.">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta property="og:title" content="Sports Maidan: Members only Sports Club with 15 Acres, 30+ sports and activities"/>
 	<meta property="og:image" content="https://www.sportsmaidan.com/img/preview.png">
@@ -26,7 +27,7 @@
   <!-- Libraries CSS Files -->
   <link href="css/owl.carousel.min.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css?v=1.4" rel="stylesheet">
 </head>
 <body>
 	<div id="preloader">
@@ -61,11 +62,15 @@
           <li><a href="#membership">Membership</a></li>
           <li><a href="#school_ex">School Excursions</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="phone_header"><a href="tel:92053 22113"><img src="img/phone.png">92053 22113</a></li>
         </ul>
       </nav>
-      <div class="mobile_nav_toggle">
-      	<span class="active_close nav_toggle_text">MENU</span>
-      	<span class="active_open nav_toggle_text">CLOSE</span>
+      <div class="mobile_nav">
+      	<a href="tel:92053 22113" class="phone_header"><img src="img/phone.png"><span>92053 22113</span></a>
+	      <div class="mobile_nav_toggle">
+	      	<span class="active_close nav_toggle_text">MENU</span>
+	      	<span class="active_open nav_toggle_text">CLOSE</span>
+	      </div>
       </div>
     </div>
   </header>
@@ -413,6 +418,10 @@
 	          	<img src="img/bg_leaves.png" alt="bg_leaves">
 	          </div>
 			  	</div>
+			  	<div class="address">
+		  			<img class="address_icon" src="img/location.png">
+		  			<p>Sector 58, Opp. Ireo Grand Arch, Gurgaon.</p>
+			  	</div>
 		  	</div>
 		  </div>
 	  </section>
@@ -423,7 +432,7 @@
 	<footer class="footer">
 		<div class="footer_inner web_container">
 			<div class="footer_left">
-				<div class="copyright">© Sports Maidan 2020. All rights reserved. <div class="privacy"><span class="p_separator">|</span> <span><a href="/privacy-policy">Privacy Policy</a></span></div></div>
+				<div class="copyright">© Sports Maidan <script>document.write(new Date().getFullYear())</script>. All rights reserved. <div class="privacy"><span class="p_separator">|</span><span><a href="/privacy-policy">Privacy Policy</a></span></div></div>
 			</div>
 			<div class="footer_right">
 				<ul class="social_media_links">
@@ -444,7 +453,31 @@
   <script src="js/easing.min.js"></script>
   <!-- Main Javascript File -->
   <script src="js/main.min.js"></script>
-
+	<script type='application/ld+json'>
+		{
+		  "@context": "http://www.schema.org",
+		  "@type": "SportsActivityLocation",
+		  "name": "Sports Maidan",
+		  "url": "https://sportsmaidan.com/",
+		  "logo": "https://sportsmaidan.com/img/logo.png",
+		  "image": "https://sportsmaidan.com/img/slide_01.png",
+		  "description": "Sports Maidan is your ultimate destination for family & corporate sports event. We have facility for football and badminton sports.",
+		  "address": {
+		    "@type": "PostalAddress",
+		    "streetAddress": "Sports Maidan, Archview Dr, opposite Ireo Grand Arch, Sector 58",
+		    "addressLocality": "Gurugram",
+		    "addressRegion": "Haryana",
+		    "postalCode": "122105 ",
+		    "addressCountry": "India"
+		  },
+		  "openingHours": "Mo, Tu, We, Th, Fr, Sa, Su 06:00-00:00",
+		  "contactPoint": {
+		    "@type": "ContactPoint",
+		    "telephone": "092053 22113",
+		    "contactType": "General"
+		  }
+		}
+	</script>
   <script>
   	jQuery(document).ready(function ($) {
   		$('form')[0].reset();
